@@ -1,0 +1,784 @@
+{
+  "sections": {
+    "5818eb69-f413-4dd3-9034-11e732c3ff8c": {
+      "type": "image-with-text-slide",
+      "blocks": {
+        "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Nails sthetics®- Das Original<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die einfachste Maniküre der Welt<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zum Shop",
+            "button_link": "shopify:\/\/collections\/uv-lampen",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-heading-1",
+        "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-text-1",
+        "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_banner_Image01_1920x_b4af1bb6-ef15-467b-a15e-206c000e689e.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "9661a4cc-9282-418a-85e8-67742fc43de3": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Salonschoen_2_58x_d2c29155-3885-454b-8f80-911606ce3f63.svg",
+            "title": "",
+            "text": "<p>Salonschöne Ergebnisse<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/staerkt-schuertztNaegel_58x_256c2f51-7418-4706-b3db-826ef979edb3.svg",
+            "title": "",
+            "text": "<p>Stärkt & schützt den Nagel<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vegan_58x_a9981b60-753f-4efd-b5ce-142a810b335c.svg",
+            "title": "",
+            "text": "<p>Vegan & Tierversuchsfrei<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "2f827ebb-5b2c-44ed-80f4-1728f88b5d3c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nur2_49_58x_4c6387af-205e-4fd9-bc12-9f3e3903492d.svg",
+            "title": "",
+            "text": "<p>Nur 2,49€ pro Maniküre<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c7105343-5281-425b-96dc-a64bc801f29d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kurze-langeNaegel_58x_d27d0513-a856-4ca9-b68d-9dbd03fa460b.svg",
+            "title": "",
+            "text": "<p>Für alle Nagel-Typen<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "39109e1f-6a87-4c03-9076-15bcf72b56dd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kein_UV_58x_c46737fa-d083-41da-be5b-f8c83d14550e.svg",
+            "title": "",
+            "text": "<p>Keine UV Lampe nötig<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-1",
+        "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-2",
+        "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-3",
+        "2f827ebb-5b2c-44ed-80f4-1728f88b5d3c",
+        "c7105343-5281-425b-96dc-a64bc801f29d",
+        "39109e1f-6a87-4c03-9076-15bcf72b56dd"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "fourth",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 4
+      }
+    },
+    "57965171-3173-4110-b98b-fe003b368846": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19649408500038__57965171-3173-4110-b98b-fe003b368846-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "template--19649408500038__57965171-3173-4110-b98b-fe003b368846-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sets"
+          }
+        },
+        "template--19649408500038__57965171-3173-4110-b98b-fe003b368846-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "uv-nagellacke"
+          }
+        },
+        "881986ed-af05-42bb-b150-3cc938199280": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "flussigkeiten"
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__57965171-3173-4110-b98b-fe003b368846-featured_collection-1",
+        "template--19649408500038__57965171-3173-4110-b98b-fe003b368846-featured_collection-2",
+        "template--19649408500038__57965171-3173-4110-b98b-fe003b368846-featured_collection-3",
+        "881986ed-af05-42bb-b150-3cc938199280"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "eb5d7e8d-f5ef-4d51-9ff4-b01c7d4b2e99": {
+      "type": "video",
+      "settings": {
+        "heading": "Was ist Nailcure?",
+        "subheading": "In 1 minute erklärt",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/trial.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ea67bbec-67d4-4098-9cdc-a37157c487a5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Sichere dir jetzt dein Starter Set",
+            "heading_size": "h2"
+          }
+        },
+        "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Lorem Ipsum<\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "ZUR ANLEITUNG",
+            "button_link": "shopify:\/\/collections\/zubehor",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-heading-1",
+        "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-text-1",
+        "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-button-1"
+      ],
+      "settings": {
+        "icon": "shopify:\/\/shop_images\/t2.png",
+        "heading": "Qualität wie aus dem Nagelstudio",
+        "image": "shopify:\/\/shop_images\/NAIL_STETHICS-2.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cef951b3-0707-4582-9846-ae07c2ec5a9d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__cef951b3-0707-4582-9846-ae07c2ec5a9d-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "template--19649408500038__cef951b3-0707-4582-9846-ae07c2ec5a9d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Lorem Ipsum <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__cef951b3-0707-4582-9846-ae07c2ec5a9d-heading-1",
+        "template--19649408500038__cef951b3-0707-4582-9846-ae07c2ec5a9d-text-1"
+      ],
+      "settings": {
+        "icon": "shopify:\/\/shop_images\/t.png",
+        "heading": "Hält bis zu 3 Wochen",
+        "image": "shopify:\/\/shop_images\/Design_ohne_Titel-12.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "25188c80-318f-4cc6-94a3-2941afebd828": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__25188c80-318f-4cc6-94a3-2941afebd828-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--19649408500038__25188c80-318f-4cc6-94a3-2941afebd828-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "12afa903-3f87-4761-b949-82d9c6adbf79": {
+          "type": "button",
+          "settings": {
+            "button_label": "ZUR ANLEITUNG",
+            "button_link": "shopify:\/\/collections\/uv-nagellacke",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__25188c80-318f-4cc6-94a3-2941afebd828-heading-1",
+        "template--19649408500038__25188c80-318f-4cc6-94a3-2941afebd828-text-1",
+        "12afa903-3f87-4761-b949-82d9c6adbf79"
+      ],
+      "settings": {
+        "icon": "shopify:\/\/shop_images\/t2.png",
+        "heading": "Kinderleichte Anwendung",
+        "image": "shopify:\/\/shop_images\/Nagellack_fabrik_von_innen_wie_saraxstudio_A5-Dokument_Instagram_Post_Quadratisch.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4f61ab33-a437-487e-9d19-64ae0ffb75d3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__4f61ab33-a437-487e-9d19-64ae0ffb75d3-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--19649408500038__4f61ab33-a437-487e-9d19-64ae0ffb75d3-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "0f712093-340a-4591-ad16-925a2c8355a0": {
+          "type": "button",
+          "settings": {
+            "button_label": "ZUR ANLEITUNG",
+            "button_link": "shopify:\/\/collections\/zubehor",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__4f61ab33-a437-487e-9d19-64ae0ffb75d3-heading-1",
+        "template--19649408500038__4f61ab33-a437-487e-9d19-64ae0ffb75d3-text-1",
+        "0f712093-340a-4591-ad16-925a2c8355a0"
+      ],
+      "settings": {
+        "icon": "shopify:\/\/shop_images\/t.png",
+        "heading": "Einfache und schonende Entfernung",
+        "image": "shopify:\/\/shop_images\/Design_ohne_Titel-14.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e6611c65-73f1-4787-9eae-3f90f98d81e4": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_148_63x_e56e32c3-95ae-423d-abd2-a19e7fdeb75d.png",
+            "title": "<strong>Tolle Farben<\/strong>",
+            "text": "<p>Kirschblüte ist eine atemberaubende Farbe, die perfekt zu jedem Hautton passt. Die Textur ist geschmeidig und leicht aufzutragen, ohne zu verschmieren. Dieser Lippenstift ist ein wahrer Traum für alle Lippenstiftliebhaber!<\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><h3><strong>Lisa<\/strong><br\/>Verifiziert<\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_148.png",
+            "title": "<strong>Perfekt für Lippenstift-Anfänger<\/strong>",
+            "text": "<p>Ich habe schon lange nach einem Lippenstift gesucht, der einfach anzuwenden ist und den ganzen Tag hält. Mit dem Kirschblüte Lippenstift von [Marke] habe ich endlich gefunden, wonach ich gesucht habe. Als Lippenstift-Anfänger erhalte ich ein fantastisches Ergebnis, und die Farbe passt zu jedem Look!<\/p><p><\/p><h3><strong>Laura<\/strong><br\/>Verifiziert<\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_148_63x_e56e32c3-95ae-423d-abd2-a19e7fdeb75d.png",
+            "title": "<strong>Geeignet für alle Hauttypen<\/strong>",
+            "text": "<p>Ich habe schon lange nach einem mühelosen Lippenstift gesucht, der den ganzen Tag hält. Mit diesem Produkt habe ich endlich gefunden, was ich gesucht habe. Die Kirschblüte-Farbe ist zauberhaft und passt zu jedem Hautton. Ein Must-Have für Lippenstiftliebhaber!<\/p><h3><strong>Sophie<\/strong><br\/>Verifiziert<\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-1",
+        "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-2",
+        "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-3"
+      ],
+      "settings": {
+        "title": "Unsere Community ist begeistert.",
+        "heading_size": "h1",
+        "image_width": "fourth",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "36bf1999-ec51-4642-9b19-055824ccf6f2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sichere dir jetzt dein Starter Set",
+            "heading_size": "h2"
+          }
+        },
+        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alles enthalten, das du zum starten brauchst<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "zum Starter Set",
+            "button_link": "shopify:\/\/collections\/zubehor",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-heading-1",
+        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-text-1",
+        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-button-1"
+      ],
+      "settings": {
+        "heading": "",
+        "image": "shopify:\/\/shop_images\/IMG_2552.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ca88c0d6-1339-48e8-b041-0b92f50d47ad": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Versand_1_100x_4102459c-8999-4426-a093-616d2524ae1f.svg",
+            "title": "Kostenloser Versand",
+            "text": "<p>Wir bieten Dir einen kostenlosen Versand mit DHL GoGreen ab 45€<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Support_100x_1ed182a0-63ee-4de7-aa99-89758ce78495.svg",
+            "title": "Kundensupport",
+            "text": "<p>Unser Kundensupport-Team ist bei Fragen jederzeit für Dich erreichbar.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sichere-zahlung_110x_45b52e60-03af-4dd8-8730-31365968cf86.svg",
+            "title": "Sichere Bezahlung",
+            "text": "<p>Wir bieten Dir eine sichere Bezahlung mit allen gängigen Zahlungsmethoden.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "53d17514-703b-4a33-8667-5bf1f2ce6bf3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kunden_100x_a7c6cbfd-078d-4a43-84bc-3b1ff3ad6f23.svg",
+            "title": "Zufriedene Kunden",
+            "text": "<p>Wir sind stolz, bereits über 150.000+ Kunden glücklich gemacht zu haben.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-1",
+        "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-2",
+        "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-3",
+        "53d17514-703b-4a33-8667-5bf1f2ce6bf3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "fourth",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c01f6f21-789a-40c9-a43d-a00ef6749308": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Verkaufsschlager",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "verkaufsschlager",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "aead315c-c7e8-4ce3-9d11-cc776f74d99d": {
+      "type": "Custom-Section-2Button",
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "Brauchst du Hilfe?",
+        "subtitle": "Kundenzufriedenheit steht bei uns an erster Stelle, deshalb sind wir jederzeit da um deine Fragen zu beantworten!",
+        "logo1": "shopify:\/\/shop_images\/mail.png",
+        "link1": "shopify:\/\/pages\/contact",
+        "button1_text": "Schreibe uns eine Mail",
+        "name1": "",
+        "logo2": "shopify:\/\/shop_images\/talk.png",
+        "link2": "shopify:\/\/pages\/contact",
+        "button2_text": "Chatte mit uns",
+        "name2": ""
+      }
+    },
+    "bf2938b7-4038-47fd-b28a-58924aba9ba8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie passen Maniko Nails auf meine Nägel?",
+            "icon": "none",
+            "row_content": "<p>Jede Packung enthält 18 Streifen in 8 verschiedenen Breiten für jede Nagelform. Das überstehende Ende wird einfach abgefeilt.<br\/><br\/>Wenn du keine sehr langen Nägel hast, kannst du die Streifen in der Mitte teilen und für einen zweiten Nagel verwenden. Für sehr breite Nägel kannst du die flexiblen Streifen vorsichtig dehnen, bis sie passen.<br\/><br\/>So bekommst du aus jeder Packung 2 bis 4 Maniküren.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich die Maniko Nails wieder entfernen?",
+            "icon": "none",
+            "row_content": "<p>Die Entfernung deiner Maniko Nails ist ganz einfach und schonend.<br\/><br\/>Trage das Maniko Remover Serum auf die Nagelhaut auf. Tränke die Spitze des Holzstäbchens mit Remover Serum und hebe nun die Streifen vorsichtig von einer Seite (Links oder Rechts) an.<br\/><br\/>Löse nun mit dem getränkten Stäbchen weiter die Klebeschicht zwischen Nagel und Streifen, indem du von links oder rechts arbeitest. Vermeide es in Wuchsrichtung des Nagels zu arbeiten.<\/p><p><br\/>Tränke das Stäbchen nach jeder Bewegung erneut mit Remover Serum oder streiche mit dem Pinsel einen Tropfen Remover Serum unter den Streifen.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich unter Maniko Nails einen Nagelhärter oder Unterlack auftragen?",
+            "icon": "none",
+            "row_content": "<p>Wenn du weiche und brüchige Nägel hast, ist Pflege das A und O.<br\/><br\/>Verwende dann gerne einen Unterlack oder einen Nagelhärter, bevor du deine Maniko Nails aufklebst.<br\/><br\/>Achte nur darauf, dass sie vorher vollständig getrocknet sind.<br\/><br\/>Du kannst deine Nägel auch zwischendurch mit etwas Nagelöl pflegen, achte nur darauf, dass du sie vor der Maniküre wieder gründlich mit unserem Prep-Pad entfettest.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich über Maniko Nails einen (UV) Überlack auftragen?",
+            "icon": "none",
+            "row_content": "<p>Ein zusätzlicher Überlack ist nicht notwendig, da die Maniko Nails bereits mit einer Schicht halbgehärtetem UV-Lack bedruckt sind.<br\/><br\/>Diese Schicht härtet nach dem Aufkleben unter der UV-Lampe zu 100% aus.<br\/><br\/>Wir haben allerdings von einigen Kund:innen gehört, dass sie gerne zusätzlich einen (UV) Überlack verwenden.<br\/><br\/>Es spricht also von unserer Seite nichts dagegen, optional einen (UV) Überlack zu verwenden.<\/p>",
+            "page": ""
+          }
+        },
+        "65411781-489b-4169-9d47-bcc84de8a6b8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich über Maniko Nails einen (UV) Überlack auftragen?",
+            "icon": "none",
+            "row_content": "<p>Ein zusätzlicher Überlack ist nicht notwendig, da die Maniko Nails bereits mit einer Schicht halbgehärtetem UV-Lack bedruckt sind.<br\/><br\/>Diese Schicht härtet nach dem Aufkleben unter der UV-Lampe zu 100% aus.<br\/><br\/>Wir haben allerdings von einigen Kund:innen gehört, dass sie gerne zusätzlich einen (UV) Überlack verwenden.<br\/><br\/>Es spricht also von unserer Seite nichts dagegen, optional einen (UV) Überlack zu verwenden<\/p>",
+            "page": ""
+          }
+        },
+        "52ed05ce-a884-4444-85e2-875030b8233d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Können Maniko Nails meine Nägel verlängern?",
+            "icon": "none",
+            "row_content": "<p>Da das überstehende Ende der Maniko Nails derzeit noch auf die Länge des Naturnagels abgefeilt werden muss, können Maniko Nails den Naturnagel nicht verlängern.<br\/><br\/>Wir arbeiten aber an einer Lösung für eine Nagelverlängerung mit Maniko Nails.<\/p>",
+            "page": ""
+          }
+        },
+        "136defaf-f5bf-4f43-8f47-4beb1c98c60d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich Maniko Nails in der Schwangerschaft \/ Stillzeit verwenden?",
+            "icon": "none",
+            "row_content": "<p>Ja, du kannst Maniko Nails auch während der Schwangerschaft und Stillzeit verwenden.<br\/><br\/>Denn wir legen besonderen Wert darauf, dass unsere Maniko Nails keine Schadstoffe enthalten, um dich und dein Baby zu schützen.<\/p>",
+            "page": ""
+          }
+        },
+        "649c51b7-1bb2-4ed3-8ce6-0a429abaf9b8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Schädigen Maniko Nails meine Nägel?",
+            "icon": "none",
+            "row_content": "<p>Nein, Maniko Nails sind viel schonender als eine Gel-Maniküre im Nagelstudio. Das liegt an der sanften Entfernung ohne Fräsen, Feilen oder Aceton.<br\/><br\/>Wichtig ist nur, dass du dir für die Entfernung genügend Zeit nimmst und nach Anleitung vorgehst. Wenn deine Nägel bereits beschädigt sind, solltest du sie zwischen den Anwendungen gut pflegen und mit Feuchtigkeit versorgen.<\/p>",
+            "page": ""
+          }
+        },
+        "5cdcea20-b127-4bb6-b81b-25a203ccb809": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich auch eine andere UV-Lampe verwenden oder nur die Maniko UV-Lampe?",
+            "icon": "none",
+            "row_content": "<p>Wenn du bereits eine UV-Lampe für herkömmlichen UV-Lack besitzt, kannst du diese auch für Maniko Nails verwenden.<br\/><br\/>Da diese Lampen für den Studiogebrauch aber meist recht sperrig sind empfehlen wir unsere leichte Maniko UV-Lampe im kompakten Reiseformat.<\/p>",
+            "page": ""
+          }
+        },
+        "56520b56-775d-4397-a536-26b1f9e54c66": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ist die Maniko UV-Lampe schädlich?",
+            "icon": "none",
+            "row_content": "<p>Nein, denn Maniko Nails benötigt nur eine sehr geringe Bestrahlung zum Aushärten.<br\/><br\/>Die Maniko UV-Lampe ist mit nur 6W deutlich schwächer als eine herkömmliche UV-Lampe im Studio oder das natürliche UV-Licht in der Sonne.<br\/><br\/>Tatsächlich bekommst du in einer Minute in der Sonne mehr UV-Strahlung ab, als in einer Minute unter der Maniko UV-Lampe.<br\/><br\/>Deshalb solltest du deine Maniküre mit Maniko Nails auch nicht im Freien machen, da das natürliche UV Licht die Maniko Nails in Sekundenschnelle aushärten kann.<br\/><br\/>Grundsätzlich ist natürlich zu sagen, dass UV-Licht die Gesundheit der Haut negativ beeinflussen kann. Wenn du also bereits sonnenempfindlich bist oder dir unsicher bist, kannst du natürlich einen Sonnenschutz auf deine Finger auftragen.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-1",
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-2",
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-3",
+        "template--19649408500038__bf2938b7-4038-47fd-b28a-58924aba9ba8-collapsible_row-4",
+        "65411781-489b-4169-9d47-bcc84de8a6b8",
+        "52ed05ce-a884-4444-85e2-875030b8233d",
+        "136defaf-f5bf-4f43-8f47-4beb1c98c60d",
+        "649c51b7-1bb2-4ed3-8ce6-0a429abaf9b8",
+        "5cdcea20-b127-4bb6-b81b-25a203ccb809",
+        "56520b56-775d-4397-a536-26b1f9e54c66"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Häufige Fragen",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b086903e-bce2-4bd7-9e90-636c2944a5a7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "100 % GELD ZURÜCK GARANTIE",
+            "heading_size": "h0"
+          }
+        },
+        "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Du bekommst 40 Tage lang dein Geld zurück, solltest du nicht zufrieden sein!<\/h2>"
+          }
+        },
+        "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Mehr erfahren",
+            "button_link": "shopify:\/\/collections\/uv-lampen",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-heading-1",
+        "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-text-1",
+        "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "5818eb69-f413-4dd3-9034-11e732c3ff8c",
+    "9661a4cc-9282-418a-85e8-67742fc43de3",
+    "57965171-3173-4110-b98b-fe003b368846",
+    "eb5d7e8d-f5ef-4d51-9ff4-b01c7d4b2e99",
+    "ea67bbec-67d4-4098-9cdc-a37157c487a5",
+    "cef951b3-0707-4582-9846-ae07c2ec5a9d",
+    "25188c80-318f-4cc6-94a3-2941afebd828",
+    "4f61ab33-a437-487e-9d19-64ae0ffb75d3",
+    "e6611c65-73f1-4787-9eae-3f90f98d81e4",
+    "36bf1999-ec51-4642-9b19-055824ccf6f2",
+    "ca88c0d6-1339-48e8-b041-0b92f50d47ad",
+    "c01f6f21-789a-40c9-a43d-a00ef6749308",
+    "aead315c-c7e8-4ce3-9d11-cc776f74d99d",
+    "bf2938b7-4038-47fd-b28a-58924aba9ba8",
+    "b086903e-bce2-4bd7-9e90-636c2944a5a7"
+  ]
+}

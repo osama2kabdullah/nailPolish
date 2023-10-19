@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d88ecf3f-3d88-44a0-bb79-f5dc5d7f1e75": {
+      "type": "Custom-Section-2Button",
+      "settings": {
+        "title": "ANLEITUNGEN",
+        "subtitle": "",
+        "logo1": "shopify:\/\/shop_images\/Hero_banner_Image01_1920x_4fc5b3d2-9a19-42bf-932c-3646c3c195fb.jpg",
+        "link1": "shopify:\/\/pages\/anwendung",
+        "button1_text": "Anwendung",
+        "name1": "",
+        "logo2": "shopify:\/\/shop_images\/DesignohneTitel-4.png",
+        "link2": "shopify:\/\/pages\/entfernung-anleitung",
+        "button2_text": "Entfernung",
+        "name2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d88ecf3f-3d88-44a0-bb79-f5dc5d7f1e75"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "88c53e94-2d26-419a-8233-6d24c9761641": {
+      "type": "three-images",
+      "blocks": {
+        "9f0fcbc0-ac29-4c50-9161-b43e6f71dcf2": {
+          "type": "text",
+          "settings": {
+            "text_subtitle": "Schritt 7:",
+            "text_title": "Unter UV LED Lampe aushärten",
+            "general_text": "Schließe die UV LED Lampe an eine Stromquelle an. Platziere deinen Zeige-, Mittel, Ring- und kleinen Finger mittig unter der UV LED Lampe und schalte sie ein. Warte 1 Minute. Die MANIKO UV LED Lampe schaltet sich automatisch aus. Härte deine Daumen separat aus.",
+            "link_text": "",
+            "link": ""
+          }
+        },
+        "b216a898-5936-4096-945f-53d8ec6e601b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "title": "Größe wählen & aufkleben"
+          }
+        },
+        "783fb142-7914-4f42-88e1-93b2c39785df": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step2_1920x_7a9408e4-32be-47b6-adca-a4bf1473f802.png",
+            "title": "Größe wählen & aufkleben"
+          }
+        },
+        "f59594da-5ab2-4e7b-8506-c09173ea8112": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nails3Kopie-2.jpg",
+            "title": "Größe wählen & aufkleben"
+          }
+        }
+      },
+      "block_order": [
+        "9f0fcbc0-ac29-4c50-9161-b43e6f71dcf2",
+        "b216a898-5936-4096-945f-53d8ec6e601b",
+        "783fb142-7914-4f42-88e1-93b2c39785df",
+        "f59594da-5ab2-4e7b-8506-c09173ea8112"
+      ],
+      "settings": {
+        "title": "Entfernung Anleitung",
+        "subtitle": "",
+        "color_scheme": ""
+      }
+    },
+    "bfe631dd-726c-4005-a498-d27fcc52c12c": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KeinAbfeilen_1920x_1232d682-5267-459e-b919-eeec208ca7e0.png",
+            "title": "Kein Abfräsen",
+            "text": "<p>oder runterfeilen<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hema-free_1920x_eb2236c6-b194-44b1-9bdf-64544dd79dae.png",
+            "title": "Kein Aceton",
+            "text": "<p>oder Chemikalien<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gelpolish_1920x_93edffe2-da17-4fcb-90fc-af001b2d7933.png",
+            "title": "Entferner auf Öl-Basis",
+            "text": "<p>mit natürlichen Inhaltsstoffen<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "86438dd2-fa08-41e8-a280-a5584fd55b55": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GesunderNagel_1920x_bcabdb9f-7f18-4c59-ac27-0bb2920476eb.png",
+            "title": "Schonend für die Nägel",
+            "text": "<p>deine Nägel bleiben gesund<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-1",
+        "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-2",
+        "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-3",
+        "86438dd2-fa08-41e8-a280-a5584fd55b55"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "fourth",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-b7fc4d31-f2a5-40ef-909a-3eb759710ab5",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6a1849a2-b5df-4d99-b4b8-d3407c097105": {
+      "type": "video",
+      "settings": {
+        "heading": "Im Video zeigen wir dir die Schritt für Schritt Anleitung",
+        "subheading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/trial.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2d349da1-7e19-4313-b55b-35b78c04a76d": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step2_1920x_7a9408e4-32be-47b6-adca-a4bf1473f802.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DesignohneTitel-4.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-1",
+        "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-2",
+        "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-3"
+      ],
+      "settings": {
+        "title": "Du brauchst:",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "73eeaf9b-c643-46b9-b6c6-7c2cc6aee1bb": {
+      "type": "Custom-Section-2Button",
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "Brauchst du Hilfe?",
+        "subtitle": "Kundenzufriedenheit steht bei uns an erster Stelle, deshalb sind wir jederzeit da um deine Fragen zu beantworten!",
+        "logo1": "shopify:\/\/shop_images\/mail.png",
+        "link1": "#",
+        "button1_text": "Schreibe uns eine Mail",
+        "name1": "",
+        "logo2": "shopify:\/\/shop_images\/talk.png",
+        "link2": "#",
+        "button2_text": "Chatte mit uns",
+        "name2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "88c53e94-2d26-419a-8233-6d24c9761641",
+    "bfe631dd-726c-4005-a498-d27fcc52c12c",
+    "6a1849a2-b5df-4d99-b4b8-d3407c097105",
+    "2d349da1-7e19-4313-b55b-35b78c04a76d",
+    "73eeaf9b-c643-46b9-b6c6-7c2cc6aee1bb"
+  ]
+}

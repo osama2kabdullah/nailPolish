@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "01d91847-8ca1-449e-9083-417b9ddfa3ba": {
+      "type": "three-images",
+      "blocks": {
+        "770330c9-9932-46a3-94f5-cfbe0ac3ab55": {
+          "type": "text",
+          "settings": {
+            "text_subtitle": "Einfache Anwendung",
+            "text_title": "Aufkleben, aushärten, Welt erobern!",
+            "general_text": "Maniko Nails sind in 3 einfachen Schritten aufgetragen! Nie wieder pinseln, vermalen oder ewig trocknen. Mit Maniko bist du sofort einsatzbereit.",
+            "link_text": "",
+            "link": "#"
+          }
+        },
+        "680b54c1-2bf0-4300-8343-23471ea1bd49": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "title": "Größe wählen & aufkleben"
+          }
+        },
+        "7286a0a8-40ea-42b0-97e3-192bcc849ef8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step2_1920x_7a9408e4-32be-47b6-adca-a4bf1473f802.png",
+            "title": "Überschuss abfeilen"
+          }
+        },
+        "c026c384-f85a-40d8-a1ea-df7cc61a1272": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Unbenanntes_Projekt8.png",
+            "title": "1 Minute aushärten"
+          }
+        }
+      },
+      "block_order": [
+        "770330c9-9932-46a3-94f5-cfbe0ac3ab55",
+        "680b54c1-2bf0-4300-8343-23471ea1bd49",
+        "7286a0a8-40ea-42b0-97e3-192bcc849ef8",
+        "c026c384-f85a-40d8-a1ea-df7cc61a1272"
+      ],
+      "settings": {
+        "title": "ANWENDUNG",
+        "subtitle": "",
+        "color_scheme": "background-1"
+      }
+    },
+    "1d6b5236-35a4-4ba2-861a-3bb0847ffb7b": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KeinVermalen_1920x_a313cf95-157c-4535-b84d-475645164f50.png",
+            "title": "Kein Vermalen mehr",
+            "text": "<p>Immer ein sauberes Ergebnis<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/KeineLiquids_1920x_13b2893f-2bc0-4ade-b9fc-2a8ef40e5fed.png",
+            "title": "Keine Flüssigkeiten",
+            "text": "<p>und kein Lösungsmittel-Geruch<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Trockenzeiten_1920x_259e97fb-3f9b-41b6-a6aa-ed9002a792ca.png",
+            "title": "Keine Trockenzeiten",
+            "text": "<p>Ausgehärtet in nur 1 Minute<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "99eef13e-6c72-4e35-a039-8a6b0017100c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SchnelleAnwendung_1920x_f8e6b776-63ff-456a-9779-304d41d2e030.png",
+            "title": "Schnelle Anwendung",
+            "text": "<p>in nur 15 Minuten<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-1",
+        "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-2",
+        "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-3",
+        "99eef13e-6c72-4e35-a039-8a6b0017100c"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "fourth",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-b7fc4d31-f2a5-40ef-909a-3eb759710ab5",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e49737df-4f9b-4ed4-ad48-696c8d82a09e": {
+      "type": "video",
+      "settings": {
+        "heading": "Im Video zeigen wir dir die Schritt für Schritt Anleitung",
+        "subheading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/trial.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f80b6112-415b-4f22-97a0-97dcd96623e4": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_banner_Image01_1920x_7038b1ff-24df-411b-88f9-d2e385e6421c.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_banner_Image01_1920x_4fc5b3d2-9a19-42bf-932c-3646c3c195fb.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-1",
+        "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-2",
+        "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-3"
+      ],
+      "settings": {
+        "title": "Du brauchst:",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1281aab5-0812-4ea0-aafb-9c3f5e406e06": {
+      "type": "Custom-Section-2Button",
+      "settings": {
+        "color_scheme": "background-2",
+        "title": "Brauchst du Hilfe?",
+        "subtitle": "Kundenzufriedenheit steht bei uns an erster Stelle, deshalb sind wir jederzeit da um deine Fragen zu beantworten!",
+        "logo1": "shopify:\/\/shop_images\/mail.png",
+        "link1": "#mail",
+        "button1_text": "Schreibe uns eine Mail",
+        "name1": "",
+        "logo2": "shopify:\/\/shop_images\/talk.png",
+        "link2": "#chat",
+        "button2_text": "Chatte mit uns",
+        "name2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "01d91847-8ca1-449e-9083-417b9ddfa3ba",
+    "1d6b5236-35a4-4ba2-861a-3bb0847ffb7b",
+    "e49737df-4f9b-4ed4-ad48-696c8d82a09e",
+    "f80b6112-415b-4f22-97a0-97dcd96623e4",
+    "1281aab5-0812-4ea0-aafb-9c3f5e406e06"
+  ]
+}

@@ -1,0 +1,20 @@
+.collection-list .card__heading {
+    text-align: center;
+    font-weight: bold;
+}
+.collection-list .card__inner{
+  border-radius:50% !important;
+}
+.collection-list__item {
+    max-width: 20.25rem !important;
+}
+.collection-list{
+  justify-content: center;
+}
+.custom-width{
+  max-width:70rem;
+  margin:0 auto;
+}
+.image-with-text__media {
+    border: 0;
+}

@@ -1,0 +1,26 @@
+.section--cs {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.row--cs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-column--cs {
+    background: transparent;
+    margin: 5px;
+}
+.text-column--cs {
+    flex: 2;
+    text-align: left;
+    margin-right: 35px;
+    max-width:50ch;
+}
+.column--cs img {
+    margin-bottom: 0px;
+}

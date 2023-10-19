@@ -1,0 +1,120 @@
+{{ 'three-images.css' | asset_url | stylesheet_tag }}
+{% style %}
+@media (min-width:750px){
+  .row_flex{
+      flex-direction:row;
+  }
+}
+{% endstyle %}
+<div class="section--cs color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <div class="row--cs">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.subtitle }}</p>
+    </div>
+    <div class="row--cs row_flex">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+          {% when 'text' %}
+          <div class="column--cs text-column--cs">
+              <h3>{{ block.settings.text_subtitle }}</h3>
+              <h2>{{ block.settings.text_title }}</h2>
+              <p>{{ block.settings.general_text }}</p>
+              {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}" class="button button--primary">{{ block.settings.link_text }}</a>
+              {% endif %}
+          </div>
+          {% when 'image' %}
+            <div class="column--cs image-column--cs">
+                <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+                <h3>{{ block.settings.title }}</h3>
+            </div>
+          {% endcase %}
+        {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Three Images",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type":"text",
+      "name":"Text",
+      "settings":[
+            {
+              "type": "text",
+              "id": "text_subtitle",
+              "label": "Text Subtitle"
+            },
+            {
+              "type": "text",
+              "id": "text_title",
+              "label": "Text Title"
+            },
+            {
+              "type": "text",
+              "id": "general_text",
+              "label": "General Text"
+            },
+            {
+              "type": "text",
+              "id": "link_text",
+              "label": "Link Text"
+            },
+            {
+              "type":"url",
+              "id":"link",
+              "label":"Link"
+            }
+            
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three Images",
+      "category": "Three Images",
+      "settings": {
+        "title": "Default Title",
+        "subtitle": "Default Subtitle"
+      }
+    }
+  ]
+}
+{% endschema %}
