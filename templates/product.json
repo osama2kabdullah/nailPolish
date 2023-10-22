@@ -18,6 +18,11 @@
           "type": "price",
           "settings": {}
         },
+        "3220e631-31a4-46b5-8fce-edc5f95d1e27": {
+          "type": "design_selector",
+          "disabled": true,
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -85,6 +90,7 @@
         "vendor",
         "title",
         "price",
+        "3220e631-31a4-46b5-8fce-edc5f95d1e27",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

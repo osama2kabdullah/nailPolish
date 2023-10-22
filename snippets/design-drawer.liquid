@@ -1,0 +1,30 @@
+{{ 'design-drawer-css.css' | asset_url | stylesheet_tag }}
+
+<section class="design-drawer" id="drawer-name" data-drawer-target>
+  <div class="design-drawer__overlay" data-drawer-close tabindex="-1"></div>
+  <div class="design-drawer__wrapper">
+    <div class="design-drawer__header">
+      <div class="design-drawer__title">{{ product.title }}</div>
+      <button
+        class="design-drawer__close"
+        data-drawer-close
+        aria-label="Close Drawer"
+      ></button>
+    </div>
+
+    <div class="design-drawer__content">
+
+      {% for product in product.metafields.custom.products.value %}
+        <div class="design-image">
+          <a href="#" data-drawer-close aria-label="Close Drawer">
+            {{ product.featured_image | image_url: '720x' | img_tag }}
+            <input type="checkbox" name="{{ product.handle }}" id="{{ product.id }}">
+          </a>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+<script src="{{ 'design-drawer-js.js' | asset_url }}" defer="defer"></script>

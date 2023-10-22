@@ -1,0 +1,100 @@
+{% style %}
+  /* selector inputs */
+  .select-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .select-input {
+    max-width: 150px;
+    height: 200px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed black;
+    cursor: pointer;
+  }
+  .select-icon {
+    font-size: 30px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+  }
+  .selected-image-wrapper {
+    position: relative;
+    width: 150px;
+  }
+  .cross-icond {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: #00000085;
+    color: white;
+    width: 25px;
+    text-align: center;
+  }
+{% endstyle %}
+
+<h2>Choose Design</h2>
+
+<section class="select-wrapper">
+  <a
+    style="text-decoration: none;"
+    href="javascript:void(0)"
+    data-drawer-trigger
+    aria-controls="drawer-name"
+    aria-expanded="false"
+  >
+    <div class="select-input">
+      <p class="select-icon">+</p>
+    </div>
+  </a>
+  <a
+    style="text-decoration: none;"
+    href="javascript:void(0)"
+    data-drawer-trigger
+    aria-controls="drawer-name"
+    aria-expanded="false"
+  >
+    <div class="select-input">
+      <p class="select-icon">+</p>
+    </div>
+  </a>
+  <a
+    style="text-decoration: none;"
+    href="javascript:void(0)"
+    data-drawer-trigger
+    aria-controls="drawer-name"
+    aria-expanded="false"
+  >
+    <div class="select-input">
+      <p class="select-icon">+</p>
+    </div>
+  </a>
+  <a
+    style="text-decoration: none;"
+    href="javascript:void(0)"
+    data-drawer-trigger
+    aria-controls="drawer-name"
+    aria-expanded="false"
+  >
+    <div class="select-input">
+      <p class="select-icon">+</p>
+    </div>
+  </a>
+  <a
+    style="text-decoration: none;"
+    href="javascript:void(0)"
+    data-drawer-trigger
+    aria-controls="drawer-name"
+    aria-expanded="false"
+  >
+    <div class="select-input">
+      <p class="select-icon">+</p>
+    </div>
+  </a>
+</section>
