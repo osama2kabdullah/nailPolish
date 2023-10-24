@@ -18,7 +18,7 @@
         <div class="design-image">
           <a href="#" data-drawer-close aria-label="Close Drawer">
             {{ product.featured_image | image_url: '720x' | img_tag }}
-            <input type="checkbox" name="{{ product.handle }}" id="{{ product.id }}">
+            <input class="image-checkbox-here" style="display: none;" type="checkbox" name="{{ product.handle }}" id="{{ product_form_id }}">
           </a>
         </div>
       {% endfor %}

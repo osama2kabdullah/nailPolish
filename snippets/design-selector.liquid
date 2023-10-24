@@ -42,59 +42,21 @@
 <h2>Choose Design</h2>
 
 <section class="select-wrapper">
-  <a
-    style="text-decoration: none;"
-    href="javascript:void(0)"
-    data-drawer-trigger
-    aria-controls="drawer-name"
-    aria-expanded="false"
-  >
-    <div class="select-input">
-      <p class="select-icon">+</p>
-    </div>
-  </a>
-  <a
-    style="text-decoration: none;"
-    href="javascript:void(0)"
-    data-drawer-trigger
-    aria-controls="drawer-name"
-    aria-expanded="false"
-  >
-    <div class="select-input">
-      <p class="select-icon">+</p>
-    </div>
-  </a>
-  <a
-    style="text-decoration: none;"
-    href="javascript:void(0)"
-    data-drawer-trigger
-    aria-controls="drawer-name"
-    aria-expanded="false"
-  >
-    <div class="select-input">
-      <p class="select-icon">+</p>
-    </div>
-  </a>
-  <a
-    style="text-decoration: none;"
-    href="javascript:void(0)"
-    data-drawer-trigger
-    aria-controls="drawer-name"
-    aria-expanded="false"
-  >
-    <div class="select-input">
-      <p class="select-icon">+</p>
-    </div>
-  </a>
-  <a
-    style="text-decoration: none;"
-    href="javascript:void(0)"
-    data-drawer-trigger
-    aria-controls="drawer-name"
-    aria-expanded="false"
-  >
-    <div class="select-input">
-      <p class="select-icon">+</p>
-    </div>
-  </a>
+  {% for i in (1..4) %}
+    <a
+      style="text-decoration: none;"
+      href="javascript:void(0)"
+      data-drawer-trigger
+      aria-controls="drawer-name"
+      aria-expanded="false"
+      id="{{ product_form_id }}"
+      index-number="{{ forloop.index }}"
+    >
+      <div class="select-input">
+        <p class="select-icon">+</p>
+      </div>
+    </a>
+  {% endfor %}
 </section>
+
+<script src="{{ 'input-checking.js' | asset_url }}" defer="defer"></script>

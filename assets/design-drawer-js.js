@@ -109,40 +109,45 @@ var drawer = function () {
   };
 
   const setImage = function (event, toImage) {
-    var fromImage = event.querySelector("img");
     const inputBox = event.querySelector('input[type="checkbox"]');
     if (inputBox.checked) {
       return;
     }
-    // If an img tag exists, get its src attribute
-    var imgSrc = fromImage.getAttribute("src");
-    // Create the main div
-    const crossDiv = document.createElement("div");
-    crossDiv.className = "cross-icond";
-    crossDiv.textContent = "X"; // Set the text content of the div to "X"
 
-    const imgTag = document.createElement("img");
-    imgTag.src = imgSrc;
-    imgTag.alt = "Alternative Text for the Image";
-    imgTag.style.width = "150px";
-    // Create a div element
+    const fromImage = event.querySelector("img");
+    const imgSrc = fromImage.getAttribute("src");
+    const indexNumber = toImage.getAttribute("index-number");
+
+    const html = `
+      <div class="selected-image-wrapper">
+        <div class="cross-icond">X</div>
+        <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 150px;">
+        <label style="display: none;" for="${indexNumber}">Design ${indexNumber}</label>
+        <input style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${toImage.id}">
+      </div>
+    `;
+
     const divTag = document.createElement("div");
-    // Set a class for the div
-    divTag.classList.add("selected-image-wrapper"); // Replace 'your-css-class' with your desired class name
-    // Append the image tag to the div
-    // divTag.appendChild(imgTag);
-    divTag.appendChild(crossDiv);
-    divTag.appendChild(imgTag);
-    // Replace the anchor tag with the div in the DOM
+    divTag.innerHTML = html;
+
     toImage.parentNode.replaceChild(divTag, toImage);
     inputBox.checked = true;
-    event.style.pointerEvents = 'none';
-    // Add a click event listener to the div
+    event.style.pointerEvents = "none";
+    const checkboxes = document.querySelectorAll(".image-checkbox-here");
+    const addBtn = document.querySelector(".product-form__submit");
+
+    const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+    addBtn.disabled = checkedCheckboxes.length !== 4;
+
+    const crossDiv = divTag.querySelector(".cross-icond");
     crossDiv.addEventListener("click", function () {
-      // Define the action you want to perform when the div is clicked
       divTag.parentNode.replaceChild(toImage, divTag);
       inputBox.checked = false;
-      event.style.pointerEvents = 'auto';
+      event.style.pointerEvents = "auto";
+      const checkboxes = document.querySelectorAll(".image-checkbox-here");
+      const addBtn = document.querySelector(".product-form__submit");
+      const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+      addBtn.disabled = checkedCheckboxes.length !== 4;
     });
   };
 
