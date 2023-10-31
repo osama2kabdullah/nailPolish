@@ -8,7 +8,7 @@
         "5d683d2e-bc64-4aec-8cbb-6084f35add16": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logonails.png",
+            "image": "shopify:\/\/shop_images\/LOGONAILFULSHOP.png",
             "image_width": 275,
             "alignment": "center"
           }
@@ -16,8 +16,9 @@
         "1334bd66-b0b6-4b2d-b895-11fc3bf300d4": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "main-menu"
+            "heading": "LINKS",
+            "menu": "main-menu",
+            "show_social": true
           }
         },
         "f3df1722-b0f3-4c88-a56b-1a185357d608": {
