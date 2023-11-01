@@ -77,9 +77,8 @@
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            disabled="disabled"
             class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-            {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+            {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout or product.template_suffix == 'bundle' %}
               disabled
             {% endif %}
           >

@@ -109,45 +109,76 @@ var drawer = function () {
   };
 
   const setImage = function (event, toImage) {
+    /**
+     * event: selected drawer product
+     * toImage: input box
+     */
+
+    /**
+     * 1. get the input box by verifying "isOptional" true or false
+     * 2. get previus input box before repalace it's position and appear it after replacement
+     *  next work
+     * 3. get the selected drawer product and save it for add to cart.
+     *
+     */
     const inputBox = event.querySelector('input[type="checkbox"]');
     if (inputBox.checked) {
       return;
     }
-
     const fromImage = event.querySelector("img");
+    const formId = toImage.getAttribute("form-id");
     const imgSrc = fromImage.getAttribute("src");
     const indexNumber = toImage.getAttribute("index-number");
+    const isOptional = toImage.getAttribute("optional");
+    const selectedVariantId = inputBox.getAttribute("varId");
 
     const html = `
       <div class="selected-image-wrapper">
         <div class="cross-icond">X</div>
         <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 150px;">
         <label style="display: none;" for="${indexNumber}">Design ${indexNumber}</label>
-        <input style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${toImage.id}">
+        <input style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
       </div>
     `;
 
     const divTag = document.createElement("div");
     divTag.innerHTML = html;
 
-    toImage.parentNode.replaceChild(divTag, toImage);
+    const parentElement = toImage.parentNode;
+    parentElement.replaceChild(divTag, toImage); // Replace divTag with toImage
+    if (isOptional === "true") {
+      var currentNumber = parseInt(toImage.getAttribute("index-number"), 10);
+      toImage.setAttribute("index-number", (currentNumber + 1).toString());
+      parentElement.insertBefore(toImage, divTag.nextSibling); // Insert toImage after divTag
+    }    
+
     inputBox.checked = true;
     event.style.pointerEvents = "none";
     const checkboxes = document.querySelectorAll(".image-checkbox-here");
     const addBtn = document.querySelector(".product-form__submit");
 
-    const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
-    addBtn.disabled = checkedCheckboxes.length !== 4;
+    const checkedCheckboxes = Array.from(checkboxes).filter(
+      (checkbox) => checkbox.checked
+    );
+    addBtn.disabled = checkedCheckboxes.length < 4;
 
     const crossDiv = divTag.querySelector(".cross-icond");
+
     crossDiv.addEventListener("click", function () {
-      divTag.parentNode.replaceChild(toImage, divTag);
+      if (isOptional == "true") {
+        divTag.parentNode.removeChild(divTag);
+      } else {
+        divTag.parentNode.replaceChild(toImage, divTag);
+      }
+
       inputBox.checked = false;
       event.style.pointerEvents = "auto";
       const checkboxes = document.querySelectorAll(".image-checkbox-here");
       const addBtn = document.querySelector(".product-form__submit");
-      const checkedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
-      addBtn.disabled = checkedCheckboxes.length !== 4;
+      const checkedCheckboxes = Array.from(checkboxes).filter(
+        (checkbox) => checkbox.checked
+      );
+      addBtn.disabled = checkedCheckboxes.length < 4;
     });
   };
 

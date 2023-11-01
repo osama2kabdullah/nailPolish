@@ -49,8 +49,32 @@
       data-drawer-trigger
       aria-controls="drawer-name"
       aria-expanded="false"
-      id="{{ product_form_id }}"
+      form-id="{{ product_form_id }}"
       index-number="{{ forloop.index }}"
+      optional="false"
+    >
+      <div class="select-input">
+        <p class="select-icon">+</p>
+      </div>
+    </a>
+  {% endfor %}
+</section>
+
+<br>
+<h2>Optional</h2>
+<small>Get 25% discount</small>
+
+<section class="select-wrapper">
+  {% for i in (1..1) %}
+    <a
+      style="text-decoration: none;"
+      href="javascript:void(0)"
+      data-drawer-trigger
+      aria-controls="drawer-name"
+      aria-expanded="false"
+      form-id="{{ product_form_id }}"
+      index-number="{{ forloop.index | plus: 4 }}"
+      optional="true"
     >
       <div class="select-input">
         <p class="select-icon">+</p>
