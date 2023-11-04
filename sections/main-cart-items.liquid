@@ -77,12 +77,25 @@
 
             <tbody>
               {%- for item in cart.items -%}
-                {% assign isOptional = false %}
-                {%- for property in item.properties -%}
-                  {% if property.first contains 'Refarance' %}
-                    {% assign isOptional = true %}
-                  {% endif %}
-                {% endfor %}
+
+                {% liquid
+                  assign isOptional = false
+                  assign bundleVariants = ''
+
+                  for property in item.properties
+                    if property.first contains 'Refarance'
+                      assign isOptional = true
+                    endif
+                    if property.first contains 'Design'
+                      assign varId = all_products[property.last].selected_or_first_available_variant.id
+                      for item in cart.items
+                        if item.variant_id == varId
+                          assign bundleVariants = bundleVariants | append: ',' | append: item.key
+                        endif
+                      endfor
+                    endif
+                  endfor
+                %}
                 {% if isOptional != false %}
                 {% endif %}
                   <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
@@ -316,6 +329,7 @@
                           <cart-remove-button
                             id="Remove-{{ item.index | plus: 1 }}"
                             data-index="{{ item.index | plus: 1 }}"
+                            optionalVariants="{{bundleVariants}}"
                           >
                             <a
                               href="{{ item.url_to_remove }}"
