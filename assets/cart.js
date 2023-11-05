@@ -7,12 +7,7 @@ class CartRemoveButton extends HTMLElement {
       const varinatData = this.associatedProducts(); // bundCurrValue
       const cartItems =
         this.closest("cart-items") || this.closest("cart-drawer-items");
-      cartItems.updateQuantity(
-        varinatData.varinatsArray,
-        varinatData.bundCurrValue,
-        this.dataset.index,
-        0
-      );
+      cartItems.updateQuantity(varinatData, this.dataset.index, 0);
     });
   }
 
@@ -20,8 +15,8 @@ class CartRemoveButton extends HTMLElement {
     const element = this;
     const variantsStr = element.getAttribute("optionalVariants");
     const varinatsArray = variantsStr
-    .split(",")
-    .filter((value) => value !== "");  
+      .split(",")
+      .filter((value) => value !== "");
     /*
     const bundCurrValue = element.parentElement
       .querySelector(".quantity-popover-container")
@@ -30,7 +25,11 @@ class CartRemoveButton extends HTMLElement {
       here we got variants array and the quantity
       bundCurrValue = bundle current value
     */
-    return { varinatsArray, bundCurrValue: 0 };
+    const varwithQty = [];
+    varinatsArray.forEach((element) => {
+      varwithQty.push({ id: element, qty: 0 });
+    });
+    return varwithQty;
   }
 }
 
@@ -82,8 +81,28 @@ class CartItems extends HTMLElement {
     const optionalvar = optionalVarStr
       .split(",")
       .filter((value) => value !== "");
+    const varwithQty = [];
+    // Function to count occurrences of elements in an array
+    function countOccurrences(array) {
+      const counts = {};
+      for (const element of array) {
+        counts[element] = (counts[element] || 0) + 1;
+      }
+      return counts;
+    }
 
-    this.updateQuantity(optionalvar, quantity, line, quantity, name, variantId);
+    const elementCounts = countOccurrences(optionalvar);
+
+    optionalvar.forEach((element) => {
+      if (elementCounts[element] > 1) {
+        varwithQty.push({ id: element, qty: quantity * elementCounts[element] });
+      } else {
+        varwithQty.push({ id: element, qty: quantity });
+      }
+    });
+
+    // make array of object
+    this.updateQuantity(varwithQty, line, quantity, name, variantId);
   }
 
   onCartUpdate() {
@@ -149,7 +168,7 @@ class CartItems extends HTMLElement {
     ];
   }
 
-  updateQuantity(optionalvar, bundlRm, line, quantity, name, variantId) {
+  updateQuantity(optionalvar, line, quantity, name, variantId) {
     this.enableLoading(line);
 
     const body = JSON.stringify({
@@ -165,11 +184,7 @@ class CartItems extends HTMLElement {
       })
       .then(async (state) => {
         const parsedState = JSON.parse(state);
-        const updateOptional = await this.updateOptionalProducts(
-          optionalvar,
-          bundlRm
-        );
-        console.log("updateOptional", updateOptional);
+        const updateOptional = await this.updateOptionalProducts(optionalvar);
 
         const quantityElement =
           document.getElementById(`Quantity-${line}`) ||
@@ -266,13 +281,13 @@ class CartItems extends HTMLElement {
       });
   }
 
-  async updateOptionalProducts(variants, quantity) {
+  async updateOptionalProducts(variants) {
     const responses = [];
     const url = window.Shopify.routes.root + "cart/change.js";
     for (const variant of variants) {
       const formData = {
-        id: variant + "",
-        quantity,
+        id: variant.id + "",
+        quantity: variant.qty,
       };
 
       try {

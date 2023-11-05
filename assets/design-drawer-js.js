@@ -115,7 +115,7 @@ var drawer = function () {
      */
     const inputBox = event.querySelector('input[type="checkbox"]');
     if (inputBox.checked) {
-      return;
+      // return;
     }
     const fromImage = event.querySelector("img");
     const formId = toImage.getAttribute("form-id");
@@ -146,7 +146,7 @@ var drawer = function () {
     }
 
     inputBox.checked = true;
-    event.style.pointerEvents = "none";
+    // event.style.pointerEvents = "none";
     const addBtn = document.querySelector(".product-form__submit");
 
     const checkedCheckboxes = document.querySelectorAll(
