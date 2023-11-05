@@ -5,6 +5,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
+  .design-name {
+    text-align: center;
+  }
   .select-input {
     max-width: 150px;
     height: 200px;
@@ -56,6 +59,7 @@
       <div class="select-input">
         <p class="select-icon">+</p>
       </div>
+      <p class="design-name">Design {{ forloop.index }}</p>
     </a>
   {% endfor %}
 </section>
@@ -79,6 +83,7 @@
       <div class="select-input">
         <p class="select-icon">+</p>
       </div>
+      <p class="design-name">Design {{ forloop.index | plus: 4 }}</p>
     </a>
   {% endfor %}
 </section>

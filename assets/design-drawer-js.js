@@ -113,17 +113,9 @@ var drawer = function () {
      * event: selected drawer product
      * toImage: input box
      */
-
-    /**
-     * 1. get the input box by verifying "isOptional" true or false
-     * 2. get previus input box before repalace it's position and appear it after replacement
-     *  next work
-     * 3. get the selected drawer product and save it for add to cart.
-     *
-     */
     const inputBox = event.querySelector('input[type="checkbox"]');
     if (inputBox.checked) {
-      return;
+      // return;
     }
     const fromImage = event.querySelector("img");
     const formId = toImage.getAttribute("form-id");
@@ -136,8 +128,8 @@ var drawer = function () {
       <div class="selected-image-wrapper">
         <div class="cross-icond">X</div>
         <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 150px;">
-        <label style="display: none;" for="${indexNumber}">Design ${indexNumber}</label>
-        <input style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
+        <label style="text-align: center; display: block;" for="${indexNumber}">Design ${indexNumber}</label>
+        <input variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
       </div>
     `;
 
@@ -150,15 +142,15 @@ var drawer = function () {
       var currentNumber = parseInt(toImage.getAttribute("index-number"), 10);
       toImage.setAttribute("index-number", (currentNumber + 1).toString());
       parentElement.insertBefore(toImage, divTag.nextSibling); // Insert toImage after divTag
-    }    
+      toImage.querySelector(".design-name").innerText = "Design "+ (currentNumber + 1).toString();
+    }
 
     inputBox.checked = true;
-    event.style.pointerEvents = "none";
-    const checkboxes = document.querySelectorAll(".image-checkbox-here");
+    // event.style.pointerEvents = "none";
     const addBtn = document.querySelector(".product-form__submit");
 
-    const checkedCheckboxes = Array.from(checkboxes).filter(
-      (checkbox) => checkbox.checked
+    const checkedCheckboxes = document.querySelectorAll(
+      'input[isOptional="false"]'
     );
     addBtn.disabled = checkedCheckboxes.length < 4;
 
@@ -167,16 +159,28 @@ var drawer = function () {
     crossDiv.addEventListener("click", function () {
       if (isOptional == "true") {
         divTag.parentNode.removeChild(divTag);
+        const remain = document.querySelectorAll('input[isOptional="true"]');
+        remain.forEach((el, index) => {
+          const inputEl = el;
+          const labelEl = document.querySelector(
+            'label[for="' + el.id + '"]'
+          );
+          inputEl.id = 5 + index;
+          inputEl.name = `properties[Design ${5 + index}]`;
+          labelEl.htmlFor = 5 + index;
+          labelEl.innerText = `Design ${5 + index}`;
+        });
+        toImage.setAttribute("index-number", 5 + remain.length);
+        toImage.querySelector(".design-name").innerText = "Design "+ (5 + remain.length).toString();
       } else {
         divTag.parentNode.replaceChild(toImage, divTag);
       }
 
       inputBox.checked = false;
       event.style.pointerEvents = "auto";
-      const checkboxes = document.querySelectorAll(".image-checkbox-here");
       const addBtn = document.querySelector(".product-form__submit");
-      const checkedCheckboxes = Array.from(checkboxes).filter(
-        (checkbox) => checkbox.checked
+      const checkedCheckboxes = document.querySelectorAll(
+        'input[isOptional="false"]'
       );
       addBtn.disabled = checkedCheckboxes.length < 4;
     });

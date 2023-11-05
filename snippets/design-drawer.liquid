@@ -17,7 +17,7 @@
       {% for product in product.metafields.custom.products.value %}
         <div class="design-image">
           <a href="#" data-drawer-close aria-label="Close Drawer">
-            {{ product.featured_image | image_url: '720x' | img_tag }}
+            {{ product.featured_image | image_url: width: 150 | image_tag }}
             <input class="image-checkbox-here" style="display: none;" type="checkbox" name="{{ product.handle }}" varId="{{ product.selected_or_first_available_variant.id }}" id="{{ product_form_id }}">
           </a>
         </div>
