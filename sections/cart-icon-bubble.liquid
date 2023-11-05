@@ -7,9 +7,25 @@
 -%}
 <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
 {%- if cart != empty -%}
+  {%liquid
+    assign totalRefaranceItems = ''
+    for item in cart.items
+      for property in item.properties
+        if property.first contains 'Refarance'
+          assign totalRefaranceItems = totalRefaranceItems | append: ',' | append: item.quantity
+        endif
+      endfor
+    endfor
+    assign totalquantities = totalRefaranceItems | split: ','
+    assign finalQuanty = 0
+    for qty in totalquantities
+      assign finalQuanty = finalQuanty | plus: qty
+    endfor
+    assign actualQty = cart.item_count | minus: finalQuanty 
+  %}
   <div class="cart-count-bubble">
     {%- if cart.item_count < 100 -%}
-      <span aria-hidden="true">{{ cart.item_count }}</span>
+      <span aria-hidden="true">{{ actualQty }}</span>
     {%- endif -%}
     <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
   </div>

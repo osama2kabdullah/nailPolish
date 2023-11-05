@@ -128,7 +128,7 @@ var drawer = function () {
       <div class="selected-image-wrapper">
         <div class="cross-icond">X</div>
         <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 150px;">
-        <label style="display: none;" for="${indexNumber}">Design ${indexNumber}</label>
+        <label style="text-align: center; display: block;" for="${indexNumber}">Design ${indexNumber}</label>
         <input variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
       </div>
     `;
@@ -142,6 +142,7 @@ var drawer = function () {
       var currentNumber = parseInt(toImage.getAttribute("index-number"), 10);
       toImage.setAttribute("index-number", (currentNumber + 1).toString());
       parentElement.insertBefore(toImage, divTag.nextSibling); // Insert toImage after divTag
+      toImage.querySelector(".design-name").innerText = "Design "+ (currentNumber + 1).toString();
     }
 
     inputBox.checked = true;
@@ -170,6 +171,7 @@ var drawer = function () {
           labelEl.innerText = `Design ${5 + index}`;
         });
         toImage.setAttribute("index-number", 5 + remain.length);
+        toImage.querySelector(".design-name").innerText = "Design "+ (5 + remain.length).toString();
       } else {
         divTag.parentNode.replaceChild(toImage, divTag);
       }
