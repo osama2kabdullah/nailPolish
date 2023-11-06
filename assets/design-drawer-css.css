@@ -82,7 +82,7 @@
 .design-drawer__content .design-image {
   max-width: 140px;
 }
-.design-drawer__content img{
+.design-drawer__content img {
   width: 100%;
 }
 .design-drawer--left .design-drawer__wrapper {
@@ -100,4 +100,12 @@
 }
 .design-drawer.is-visible .design-drawer__overlay {
   opacity: 0.5;
+}
+.out-stock-message small {
+  background: red;
+  padding: 0.5rem;
+}
+.out-stock-message {
+  position: absolute;
+  font-size: small;
 }
