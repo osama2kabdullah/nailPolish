@@ -41,11 +41,15 @@
     text-align: center;
   }
 {% endstyle %}
+{%liquid
+  assign requredNnumber = product.metafields.custom.requred_to_add.value
+%}
 
-<h2>Choose Design</h2>
+<h2>Choose Design {{ requredNnumber }}</h2>
+
 
 <section class="select-wrapper">
-  {% for i in (1..4) %}
+  {% for i in (1..requredNnumber) %}
     <a
       style="text-decoration: none;"
       href="javascript:void(0)"
@@ -54,6 +58,7 @@
       aria-expanded="false"
       form-id="{{ product_form_id }}"
       index-number="{{ forloop.index }}"
+      requred-number="{{ requredNnumber }}"
       optional="false"
     >
       <div class="select-input">
@@ -77,13 +82,23 @@
       aria-controls="drawer-name"
       aria-expanded="false"
       form-id="{{ product_form_id }}"
-      index-number="{{ forloop.index | plus: 4 }}"
+      index-number="{{ forloop.index | plus: requredNnumber }}"
+      requred-number="{{ requredNnumber }}"
       optional="true"
     >
       <div class="select-input">
         <p class="select-icon">+</p>
       </div>
-      <p class="design-name">Design {{ forloop.index | plus: 4 }}</p>
+      <p class="design-name">Design {{ forloop.index | plus: requredNnumber }}</p>
     </a>
   {% endfor %}
 </section>
+<!--
+dependecy
+
+snippets/design-selector.liquid
+------
+
+assets/design-drawer-js.js
+------
+-->

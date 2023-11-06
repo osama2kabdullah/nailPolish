@@ -121,6 +121,7 @@ var drawer = function () {
     const formId = toImage.getAttribute("form-id");
     const imgSrc = fromImage.getAttribute("src");
     const indexNumber = toImage.getAttribute("index-number");
+    const requredNumber = parseInt(toImage.getAttribute("requred-number"));
     const isOptional = toImage.getAttribute("optional");
     const selectedVariantId = inputBox.getAttribute("varId");
 
@@ -152,7 +153,7 @@ var drawer = function () {
     const checkedCheckboxes = document.querySelectorAll(
       'input[isOptional="false"]'
     );
-    addBtn.disabled = checkedCheckboxes.length < 4;
+    addBtn.disabled = checkedCheckboxes.length < requredNumber;
 
     const crossDiv = divTag.querySelector(".cross-icond");
 
@@ -165,13 +166,13 @@ var drawer = function () {
           const labelEl = document.querySelector(
             'label[for="' + el.id + '"]'
           );
-          inputEl.id = 5 + index;
-          inputEl.name = `properties[Design ${5 + index}]`;
-          labelEl.htmlFor = 5 + index;
-          labelEl.innerText = `Design ${5 + index}`;
+          inputEl.id = requredNumber + 1 + index;
+          inputEl.name = `properties[Design ${requredNumber + 1 + index}]`;
+          labelEl.htmlFor = requredNumber + 1 + index;
+          labelEl.innerText = `Design ${requredNumber + 1 + index}`;
         });
-        toImage.setAttribute("index-number", 5 + remain.length);
-        toImage.querySelector(".design-name").innerText = "Design "+ (5 + remain.length).toString();
+        toImage.setAttribute("index-number", requredNumber + 1 + remain.length);
+        toImage.querySelector(".design-name").innerText = "Design "+ (requredNumber + 1 + remain.length).toString();
       } else {
         divTag.parentNode.replaceChild(toImage, divTag);
       }
@@ -182,7 +183,7 @@ var drawer = function () {
       const checkedCheckboxes = document.querySelectorAll(
         'input[isOptional="false"]'
       );
-      addBtn.disabled = checkedCheckboxes.length < 4;
+      addBtn.disabled = checkedCheckboxes.length < requredNumber;
     });
   };
 
