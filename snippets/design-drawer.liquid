@@ -19,7 +19,7 @@
             assign out_of_stock = false
             assign var = product.selected_or_first_available_variant
             if var.inventory_management
-              if var.inventory_quantity == 0
+              if var.inventory_quantity < 1
                 assign out_of_stock = true
               endif
             else
