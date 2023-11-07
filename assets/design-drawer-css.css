@@ -101,11 +101,3 @@
 .design-drawer.is-visible .design-drawer__overlay {
   opacity: 0.5;
 }
-.out-stock-message small {
-  background: red;
-  padding: 0.5rem;
-}
-.out-stock-message {
-  position: absolute;
-  font-size: small;
-}

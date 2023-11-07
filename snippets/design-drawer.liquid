@@ -15,22 +15,7 @@
     <div class="design-drawer__content">
       {% for product in product.metafields.custom.products.value %}
         <div class="design-image">
-          {% liquid
-            assign out_of_stock = false
-            assign var = product.selected_or_first_available_variant
-            if var.inventory_management
-              if var.inventory_quantity < 1
-                assign out_of_stock = true
-              endif
-            else
-              assign out_of_stock = true
-            endif
-          %}
-          {% if out_of_stock %}
-            <div class="out-stock-message"><small>Out Of Stock</small></div>
-          {% endif %}
           <a
-            style="{% if out_of_stock %}pointer-events:none;{%endif%}"
             href="#"
             data-drawer-close
             aria-label="Close Drawer"

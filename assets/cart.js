@@ -210,21 +210,8 @@ class CartItems extends HTMLElement {
       sections_url: window.location.pathname,
     });
 
-    if (optionalvar.some((obj) => obj?.availablQty >= quantity)) {
-      // Call the API
-      callApi.call(this);
-    } else {
-      if (!optionalvar.some((obj) => !("availablQty" in obj))) {
-        handleError.call(this);
-      } else {
-        callApi.call(this);
-      }
-    }
+    callApi.call(this);
 
-    function handleError() {
-      this.disableLoading(line);
-      this.updateLiveRegions(line, "have not enogh quantity");
-    }
     function callApi() {
       fetch(`${routes.cart_change_url}`, { ...fetchConfig(), ...{ body } })
         .then((response) => {
