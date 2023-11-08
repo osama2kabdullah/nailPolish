@@ -14,24 +14,12 @@ class CartRemoveButton extends HTMLElement {
   associatedProducts() {
     const element = this;
     const variantsStr = element.getAttribute("optionalVariants");
-    const optionalvarQty = element.getAttribute("optionalvarQty");
-
-    const optionalvarQtyArr = optionalvarQty
-      .split(",")
-      .map((value) => {
-        if (value === "sold") {
-          return 0;
-        } else if (value !== "") {
-          return value;
-        }
-      })
-      .filter((value) => value !== undefined);
 
     const varinatsArray = variantsStr
       .split(",")
       .filter((value) => value !== "");
     const varwithQty = [];
-    varinatsArray.forEach((element, index) => {
+    varinatsArray.forEach((element) => {
       varwithQty.push({
         id: element,
         qty: 0,
@@ -86,21 +74,6 @@ class CartItems extends HTMLElement {
       event.target.parentElement.parentElement.parentElement
         .querySelector("cart-remove-button")
         .getAttribute("optionalVariants");
-    const optionalvarQty =
-      event.target.parentElement.parentElement.parentElement
-        .querySelector("cart-remove-button")
-        .getAttribute("optionalvarQty");
-
-    const optionalvarQtyArr = optionalvarQty
-      .split(",")
-      .map((value) => {
-        if (value === "sold") {
-          return 0;
-        } else if (value !== "") {
-          return value;
-        }
-      })
-      .filter((value) => value !== undefined);
 
     const optionalvar = optionalVarStr
       .split(",")
@@ -121,14 +94,12 @@ class CartItems extends HTMLElement {
       if (elementCounts[element] > 1) {
         varwithQty.push({
           id: element,
-          qty: quantity * elementCounts[element],
-          availablQty: optionalvarQtyArr[index],
+          qty: quantity * elementCounts[element]
         });
       } else {
         varwithQty.push({
           id: element,
-          qty: quantity,
-          availablQty: optionalvarQtyArr[index],
+          qty: quantity
         });
       }
     });

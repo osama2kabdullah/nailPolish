@@ -116,7 +116,6 @@
                       {% liquid
                         assign isOptional = false
                         assign bundleVariants = ''
-                        assign optionalvarQty = ''
                         assign requredProduct = item.product.metafields.custom.requred_to_add.value
 
                         for property in item.properties
@@ -129,7 +128,6 @@
                               assign var = Product.selected_or_first_available_variant
                               assign varQty = var.inventory_quantity
                               assign varId = var.id
-                              assign optionalvarQty = optionalvarQty | append: ',' | append: varQty
                               for ite_m in cart.items
                                 if ite_m.variant_id == varId
                                   assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
@@ -383,7 +381,6 @@
                                   id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
                                   data-index="{{ item.index | plus: 1 }}"
                                   optionalVariants="{{bundleVariants}}"
-                                  optionalvarQty="{{optionalvarQty}}"
                                 >
                                   <button
                                     type="button"

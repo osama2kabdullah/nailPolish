@@ -80,8 +80,8 @@
                 {% liquid
                   assign isOptional = false
                   assign bundleVariants = ''
-                  assign optionalvarQty = ''
-                  assign requredProduct = item.product.metafields.custom.requred_to_add.value
+                  assign requredProduct = item.product.metafields.custom.requred_to_add.value | times: 1
+                  assign optionalPrices = ''
 
                   for property in item.properties
                     if property.first contains 'Refarance'
@@ -91,16 +91,30 @@
                       if forloop.index > requredProduct
                         assign Product = all_products[property.last]
                         assign var = Product.selected_or_first_available_variant
-                        assign varQty = var.inventory_quantity
-                        assign varId = var.id
-                        assign optionalvarQty = optionalvarQty | append: ',' | append: varQty
                         for ite_m in cart.items
-                          if ite_m.variant_id == varId
+                          if ite_m.variant_id == var.id
                             assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
                           endif
                         endfor
                       endif
                     endif
+                  endfor
+
+                  assign uniqOptionals = bundleVariants | split: ',' | uniq
+                  for line_id in uniqOptionals
+                    for line_ite in cart.items
+                      if line_id == line_ite.key
+                        assign optionalPrices = optionalPrices | append: '|' | append: line_ite.final_line_price
+                      endif
+                    endfor
+                  endfor
+
+                  assign pricesArray = optionalPrices | split: '|'
+                  assign combinePrice = 0
+
+                  for price in pricesArray
+                    assign singlePrice = price | times: 1
+                    assign combinePrice = combinePrice | plus: singlePrice
                   endfor
                 %}
                 {% if isOptional == false %}
@@ -336,7 +350,7 @@
                             id="Remove-{{ item.index | plus: 1 }}"
                             data-index="{{ item.index | plus: 1 }}"
                             optionalVariants="{{bundleVariants}}"
-                            optionalvarQty="{{optionalvarQty}}"
+                            optionalVariantPrices="{{optionalPrices}}"
                           >
                             <a
                               href="{{ item.url_to_remove }}"
@@ -477,12 +491,12 @@
                               {{ 'products.product.price.sale_price' | t }}
                             </dt>
                             <dd class="price price--end">
-                              {{ item.final_line_price | money }}
+                              {{ item.final_line_price | plus: combinePrice | money }}
                             </dd>
                           </dl>
                         {%- else -%}
                           <span class="price price--end">
-                            {{ item.original_line_price | money }}
+                            {{ item.original_line_price | plus: combinePrice | money }}
                           </span>
                         {%- endif -%}
 
