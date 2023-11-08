@@ -166,8 +166,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/staerkt-schuertztNaegel_58x_256c2f51-7418-4706-b3db-826ef979edb3.svg",
-            "title": "Column",
-            "text": "<p>Stärkt & schützt den Nagel<\/p>",
+            "title": "Stärkt & schützt den Nagel",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -175,8 +175,9 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Vegan_58x_a9981b60-753f-4efd-b5ce-142a810b335c.svg",
+            "title": "Vegan & Tierversuchsfrei",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -184,8 +185,9 @@
         "ebb71c59-5f02-4152-91e3-5c4f7990cff6": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/nur2_49_58x_4c6387af-205e-4fd9-bc12-9f3e3903492d.svg",
+            "title": "Nur 2,49€ pro Maniküre",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -193,8 +195,9 @@
         "3b73e6b8-2226-4d43-87d3-84e9e493f2aa": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/kurze-langeNaegel_58x_d27d0513-a856-4ca9-b68d-9dbd03fa460b.svg",
+            "title": "Für alle Nagel-Typen",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -202,8 +205,9 @@
         "5378812e-80f8-4b68-b84a-22e00d568d76": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Kein_UV_58x_c46737fa-d083-41da-be5b-f8c83d14550e.svg",
+            "title": "Keine UV Lampe nötig",
+            "text": "",
             "link_label": "",
             "link": ""
           }
