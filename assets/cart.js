@@ -5,6 +5,7 @@ class CartRemoveButton extends HTMLElement {
     this.addEventListener("click", (event) => {
       event.preventDefault();
       const varinatData = this.associatedProducts(); // bundCurrValue
+      console.log(varinatData);
       const cartItems =
         this.closest("cart-items") || this.closest("cart-drawer-items");
       cartItems.updateQuantity(varinatData, this.dataset.index, 0);
@@ -18,6 +19,7 @@ class CartRemoveButton extends HTMLElement {
     const varinatsArray = variantsStr
       .split(",")
       .filter((value) => value !== "");
+
     const varwithQty = [];
     varinatsArray.forEach((element) => {
       varwithQty.push({
@@ -79,29 +81,11 @@ class CartItems extends HTMLElement {
       .split(",")
       .filter((value) => value !== "");
     const varwithQty = [];
-    // Function to count occurrences of elements in an array
-    function countOccurrences(array) {
-      const counts = {};
-      for (const element of array) {
-        counts[element] = (counts[element] || 0) + 1;
-      }
-      return counts;
-    }
-
-    const elementCounts = countOccurrences(optionalvar);
-
-    optionalvar.forEach((element, index) => {
-      if (elementCounts[element] > 1) {
-        varwithQty.push({
-          id: element,
-          qty: quantity * elementCounts[element]
-        });
-      } else {
-        varwithQty.push({
-          id: element,
-          qty: quantity
-        });
-      }
+    optionalvar.forEach((element) => {
+      varwithQty.push({
+        id: element,
+        qty: quantity,
+      });
     });
 
     // make array of object
@@ -299,7 +283,7 @@ class CartItems extends HTMLElement {
     const url = window.Shopify.routes.root + "cart/change.js";
     for (const variant of variants) {
       const formData = {
-        id: variant.id + "",
+        line: parseInt(variant.id),
         quantity: variant.qty,
       };
 

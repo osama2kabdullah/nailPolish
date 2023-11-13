@@ -44,9 +44,10 @@ if (!customElements.get("product-form")) {
         const variantIds = [];
 
         // Iterate through the selected input elements
-        optionalInputs.forEach((input) => {
+        optionalInputs.forEach((input, index) => {
           const variantId = input.getAttribute("variant-id");
-          variantIds.push({ id: variantId, quantity: 1 });
+          const uniqueId = input.getAttribute("uinq-id");
+          variantIds.push({ id: variantId, quantity: 1, uniqueId });
         });
 
         const formData = new FormData(this.form);
@@ -59,7 +60,13 @@ if (!customElements.get("product-form")) {
           this.cart.setActiveElement(document.activeElement);
         }
 
-        const productName = this.form.querySelector(".product-variant-id").getAttribute("product-name");
+        const productName = this.form
+          .querySelector(".product-variant-id")
+          .getAttribute("product-name");
+
+        variantIds.forEach((variantId, index) => {
+          formData.append(`[properties][_id_${index}]`, variantId.uniqueId);
+        });
 
         variantIds.forEach((variantId, index) => {
           formData.append(`items[${index}][id]`, variantId.id);
@@ -67,6 +74,10 @@ if (!customElements.get("product-form")) {
           formData.append(
             `items[${index}][properties][Refarance Product]`,
             productName
+          );
+          formData.append(
+            `items[${index}][properties][_uniqueId]`,
+            variantId.uniqueId
           );
         });
 
