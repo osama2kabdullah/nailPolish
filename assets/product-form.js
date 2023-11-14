@@ -19,6 +19,16 @@ if (!customElements.get("product-form")) {
         this.hideErrors = this.dataset.hideErrors === "true";
       }
 
+      generateUniqueId(index) {
+        var uniq =
+          "id" +
+          index +
+          new Date().getUTCMilliseconds().toString(36) +
+          Date.now().toString(36) +
+          Math.random().toString(36).substring(2, 12).padStart(12, 0);
+        return uniq;
+      }
+
       onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute("aria-disabled") === "true") return;
@@ -46,7 +56,7 @@ if (!customElements.get("product-form")) {
         // Iterate through the selected input elements
         optionalInputs.forEach((input, index) => {
           const variantId = input.getAttribute("variant-id");
-          const uniqueId = input.getAttribute("uinq-id");
+          const uniqueId = this.generateUniqueId(index);
           variantIds.push({ id: variantId, quantity: 1, uniqueId });
         });
 

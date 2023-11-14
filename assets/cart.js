@@ -5,7 +5,6 @@ class CartRemoveButton extends HTMLElement {
     this.addEventListener("click", (event) => {
       event.preventDefault();
       const varinatData = this.associatedProducts(); // bundCurrValue
-      console.log(varinatData);
       const cartItems =
         this.closest("cart-items") || this.closest("cart-drawer-items");
       cartItems.updateQuantity(varinatData, this.dataset.index, 0);
@@ -187,6 +186,8 @@ class CartItems extends HTMLElement {
           }
           const updateOptional = await this.updateOptionalProducts(optionalvar);
 
+          console.log(updateOptional);
+
           this.classList.toggle("is-empty", parsedState.item_count === 0);
           const cartDrawerWrapper = document.querySelector("cart-drawer");
           const cartFooter = document.getElementById("main-cart-footer");
@@ -286,7 +287,7 @@ class CartItems extends HTMLElement {
         line: parseInt(variant.id),
         quantity: variant.qty,
       };
-
+      
       try {
         const response = await fetch(url, {
           method: "POST",

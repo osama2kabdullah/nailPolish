@@ -125,21 +125,12 @@ var drawer = function () {
     const isOptional = toImage.getAttribute("optional");
     const selectedVariantId = inputBox.getAttribute("varId");
 
-    function generateUniqueId() {
-      var uniq =
-        "id" +
-        new Date().getUTCMilliseconds().toString(36) +
-        Date.now().toString(36) +
-        Math.random().toString(36).substring(2, 12).padStart(12, 0);
-      return uniq;
-    }
-
     const html = `
       <div class="selected-image-wrapper">
         <div class="cross-icond">X</div>
         <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 150px;">
         <label style="text-align: center; display: block;" for="${indexNumber}">Design ${indexNumber}</label>
-        <input uinq-id="${generateUniqueId()}" variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
+        <input variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
       </div>
     `;
 
