@@ -94,7 +94,7 @@
                     for prop in ite_m.properties
                       if prop.first contains '_uniqueId'
                         if optionalUniqIds contains prop.last
-                          assign bundleVariants = bundleVariants | append: ',' | append: item_index
+                          assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
                         endif
                       endif
                     endfor

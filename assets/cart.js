@@ -281,57 +281,30 @@ class CartItems extends HTMLElement {
 
   async updateOptionalProducts(variants) {
     const url = window.Shopify.routes.root + "cart/change.js";
-    const maxRetries = variants.length; // Maximum number of retries
-    const retryDelay = 1000; // Delay between retries in milliseconds
-
     let responses = [];
     for (const variant of variants) {
       let formData = {
-        line: parseInt(variant.id),
+        id: variant.id,
         quantity: variant.qty,
       };
+      console.log("formData 1", formData);
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
 
-      let retryCount = 0;
-
-      while (retryCount < maxRetries) {
-        try {
-          const response = await fetch(url, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          });
-
-          const data = await response.json();
-
-          if (data.token) {
-            // Success
-            responses.push(data);
-            break; // Exit the loop on success
-          } else if (data.status === "bad_request") {
-            // Retry on error with a new line ID
-            retryCount++;
-            console.error("Error:", data);
-
-            // Increment the line ID for the next retry
-            formData.line = formData.line - responses.length;
-
-            await new Promise((resolve) => setTimeout(resolve, retryDelay));
-          } else {
-            // Handle other response cases as needed
-            console.error("Unexpected response:", data);
-            responses.push(null);
-            break;
-          }
-        } catch (error) {
-          console.error("Error:", error);
-          responses.push(null);
-          break;
-        }
+        const data = await response.json();
+        responses.push(data);
+      } catch (error) {
+        console.error("Error:", error);
+        responses.push(null);
       }
     }
-    responses.push({token: responses[0].token});
+    return responses;
   }
 
   updateLiveRegions(line, message) {
