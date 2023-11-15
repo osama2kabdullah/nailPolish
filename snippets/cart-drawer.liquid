@@ -116,25 +116,38 @@
                       {% liquid
                         assign isOptional = false
                         assign bundleVariants = ''
-                        assign requredProduct = item.product.metafields.custom.requred_to_add.value
-
+                        assign requredProduct = item.product.metafields.custom.requred_to_add.value | times: 1
+                        assign optionalUniqIds = ''
+                        assign optionalProductPrices = ''
+      
+                        for property in item.properties
+                          if property.first contains '_id_'
+                            assign optionalUniqIds = optionalUniqIds | append: '|' | append: property.last
+                          endif
+                        endfor
+      
+                        for ite_m in cart.items
+                          assign item_index = ite_m.index | plus: 1
+                          for prop in ite_m.properties
+                            if prop.first contains '_uniqueId'
+                              if optionalUniqIds contains prop.last
+                                assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
+                                assign optionalProductPrices = optionalProductPrices | append: ',' | append: ite_m.final_line_price
+                              endif
+                            endif
+                          endfor
+                        endfor
+      
                         for property in item.properties
                           if property.first contains 'Refarance'
                             assign isOptional = true
                           endif
-                          if property.first contains 'Design'
-                            if forloop.index > requredProduct
-                              assign Product = all_products[property.last]
-                              assign var = Product.selected_or_first_available_variant
-                              assign varQty = var.inventory_quantity
-                              assign varId = var.id
-                              for ite_m in cart.items
-                                if ite_m.variant_id == varId
-                                  assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
-                                endif
-                              endfor
-                            endif
-                          endif
+                        endfor
+      
+                        assign mainPrice = 0
+                        assign singlePrices = optionalProductPrices | split: ','
+                        for price in singlePrices
+                          assign mainPrice = mainPrice | plus: price
                         endfor
                       %}
 
@@ -292,12 +305,12 @@
                                     {{ 'products.product.price.sale_price' | t }}
                                   </span>
                                   <span class="price price--end">
-                                    {{ item.final_line_price | money }}
+                                    {{ item.final_line_price | plus: mainPrice | money }}
                                   </span>
                                 </div>
                               {%- else -%}
                                 <span class="price price--end">
-                                  {{ item.original_line_price | money }}
+                                  {{ item.original_line_price | plus: mainPrice | money }}
                                 </span>
                               {%- endif -%}
 
@@ -381,6 +394,7 @@
                                   id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
                                   data-index="{{ item.index | plus: 1 }}"
                                   optionalVariants="{{bundleVariants}}"
+                                  optionalVariantPrices="{{ optionalUniqIds }}"
                                 >
                                   <button
                                     type="button"

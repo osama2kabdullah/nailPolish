@@ -172,7 +172,7 @@ class CartItems extends HTMLElement {
           return response.text();
         })
         .then(async (state) => {
-          const parsedState = JSON.parse(state);
+          let parsedState = JSON.parse(state);
 
           const quantityElement =
             document.getElementById(`Quantity-${line}`) ||
@@ -185,8 +185,13 @@ class CartItems extends HTMLElement {
             return;
           }
           const updateOptional = await this.updateOptionalProducts(optionalvar);
-
-          console.log(updateOptional);
+          /*
+          Here I trying to update prices
+          ======
+          console.log("old", parsedState);
+          parsedState = updateOptional[updateOptional.length - 1];
+          console.log("new", parsedState);
+          */
 
           this.classList.toggle("is-empty", parsedState.item_count === 0);
           const cartDrawerWrapper = document.querySelector("cart-drawer");
@@ -214,6 +219,7 @@ class CartItems extends HTMLElement {
               section.selector
             );
           });
+
           const updatedValue = parsedState.items[line - 1]
             ? parsedState.items[line - 1].quantity
             : undefined;
@@ -287,7 +293,6 @@ class CartItems extends HTMLElement {
         id: variant.id,
         quantity: variant.qty,
       };
-      console.log("formData 1", formData);
       try {
         const response = await fetch(url, {
           method: "POST",
