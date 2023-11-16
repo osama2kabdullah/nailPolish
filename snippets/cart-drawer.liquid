@@ -119,13 +119,13 @@
                         assign requredProduct = item.product.metafields.custom.requred_to_add.value | times: 1
                         assign optionalUniqIds = ''
                         assign optionalProductPrices = ''
-      
+
                         for property in item.properties
                           if property.first contains '_id_'
                             assign optionalUniqIds = optionalUniqIds | append: '|' | append: property.last
                           endif
                         endfor
-      
+
                         for ite_m in cart.items
                           assign item_index = ite_m.index | plus: 1
                           for prop in ite_m.properties
@@ -137,13 +137,13 @@
                             endif
                           endfor
                         endfor
-      
+
                         for property in item.properties
                           if property.first contains 'Refarance'
                             assign isOptional = true
                           endif
                         endfor
-      
+
                         assign mainPrice = 0
                         assign singlePrices = optionalProductPrices | split: ','
                         for price in singlePrices
@@ -220,6 +220,15 @@
                                   {%- if property.last != blank and property_first_char != '_' -%}
                                     {% if property.first contains 'Design' %}
                                       {% assign product_handle = property.last %}
+                                      {% assign Product = all_products[product_handle] %}
+                                      {% assign varint = Product.selected_or_first_available_variant %}
+                                      {% assign DesirecartItem = '' %}
+
+                                      {% for i_tem in cart.items %}
+                                        {% if i_tem.variant_id == varint.id %}
+                                          {% assign DesirecartItem = i_tem %}
+                                        {% endif %}
+                                      {% endfor %}
                                       <div
                                         style="
                                           display: flex;
@@ -228,13 +237,24 @@
                                         "
                                         class="product-option"
                                       >
-                                        <dt>{{ property.first }}:</dt>
+                                        <dt>
+                                          {% if forloop.index <= requredProduct %}
+                                            {{ property.first }}:
+                                          {% else %}
+                                            {{ property.first }}:
+                                            <br>
+                                            <span>-25%</span>
+                                            <br>
+                                            <span>{{ DesirecartItem.final_line_price | money }}</span>
+                                          {% endif %}
+                                        </dt>
                                         <dd>
                                           <img
                                             style="width: 50px;"
-                                            src="{{ all_products[product_handle].featured_image | img_url: '150x' }}"
+                                            src="{{ Product.featured_image | img_url: '150x' }}"
                                             alt=""
                                           >
+                                          <br>
                                         </dd>
                                       </div>
                                     {% else %}
@@ -305,12 +325,12 @@
                                     {{ 'products.product.price.sale_price' | t }}
                                   </span>
                                   <span class="price price--end">
-                                    {{ item.final_line_price | plus: mainPrice | money }}
+                                    {{ item.final_line_price | money }}
                                   </span>
                                 </div>
                               {%- else -%}
                                 <span class="price price--end">
-                                  {{ item.original_line_price | plus: mainPrice | money }}
+                                  {{ item.original_line_price | money }}
                                 </span>
                               {%- endif -%}
 
