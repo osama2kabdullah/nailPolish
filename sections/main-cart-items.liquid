@@ -80,6 +80,7 @@
                 {% liquid
                   assign isOptional = false
                   assign bundleVariants = ''
+                  assign bundleVariantsLine = ''
                   assign requredProduct = item.product.metafields.custom.requred_to_add.value | times: 1
                   assign optionalUniqIds = ''
                   assign optionalProductPrices = ''
@@ -96,6 +97,7 @@
                       if prop.first contains '_uniqueId'
                         if optionalUniqIds contains prop.last
                           assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
+                          assign bundleVariantsLine = bundleVariantsLine | append: ',' | append: item_index
                           assign optionalProductPrices = optionalProductPrices | append: ',' | append: ite_m.final_line_price
                         endif
                       endif
@@ -114,9 +116,14 @@
                     assign mainPrice = mainPrice | plus: price
                   endfor
                 %}
-                {% if isOptional == false %}
-                {% endif %}
-                <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
+
+                <tr
+                  {% if isOptional == true %}
+                    style="display: none;"
+                  {% endif %}
+                  class="cart-item"
+                  id="CartItem-{{ item.index | plus: 1 }}"
+                >
                   <td class="cart-item__media">
                     {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -370,6 +377,7 @@
                           id="Remove-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
                           optionalVariants="{{bundleVariants}}"
+                          bundleVariantsLine="{{bundleVariantsLine}}"
                           optionalVariantPrices="{{ optionalUniqIds }}"
                         >
                           <a
