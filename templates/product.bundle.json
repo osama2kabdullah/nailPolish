@@ -40,6 +40,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "a8311548-f14f-4eb3-989c-ef9546b9f2b9": {
+          "type": "shopify:\/\/apps\/trust-badges-bear\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -93,6 +97,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "a8311548-f14f-4eb3-989c-ef9546b9f2b9",
         "description",
         "share",
         "bd7a4379-4a5b-47ae-a803-c0c1c7f52cdf",

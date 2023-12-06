@@ -137,12 +137,12 @@
     "ab9d8402-5255-4fb4-b9c2-ba1b5e538b08": {
       "type": "video",
       "settings": {
-        "heading": "Was ist Nailcure?",
-        "subheading": "in 1 Minute erklärt",
+        "heading": "Was ist Nailful? Und warum?",
+        "subheading": "In 2 Minuten erklärt",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/trial.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "",

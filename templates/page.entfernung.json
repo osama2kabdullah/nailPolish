@@ -16,7 +16,7 @@
           "settings": {
             "text_subtitle": "Schritt 7:",
             "text_title": "Unter UV LED Lampe aushärten",
-            "general_text": "Schließe die UV LED Lampe an eine Stromquelle an. Platziere deinen Zeige-, Mittel, Ring- und kleinen Finger mittig unter der UV LED Lampe und schalte sie ein. Warte 1 Minute. Die MANIKO UV LED Lampe schaltet sich automatisch aus. Härte deine Daumen separat aus.",
+            "general_text": "Schließe die UV LED Lampe an eine Stromquelle an. Platziere deinen Zeige-, Mittel, Ring- und kleinen Finger mittig unter der UV LED Lampe und schalte sie ein. Warte 1 Minute. Die NAILFUL UV LED Lampe schaltet sich automatisch aus. Härte deine Daumen separat aus.",
             "link_text": "",
             "link": ""
           }
@@ -38,7 +38,6 @@
         "f59594da-5ab2-4e7b-8506-c09173ea8112": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nails3Kopie-2.jpg",
             "title": "Größe wählen & aufkleben"
           }
         }
@@ -129,8 +128,8 @@
         "subheading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/trial.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -164,7 +163,6 @@
         "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DesignohneTitel-4.png",
             "title": "",
             "text": "",
             "link_label": "",

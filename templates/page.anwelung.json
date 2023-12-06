@@ -16,7 +16,7 @@
           "settings": {
             "text_subtitle": "Einfache Anwendung",
             "text_title": "Aufkleben, aushärten, Welt erobern!",
-            "general_text": "Maniko Nails sind in 3 einfachen Schritten aufgetragen! Nie wieder pinseln, vermalen oder ewig trocknen. Mit Maniko bist du sofort einsatzbereit.",
+            "general_text": "Nailful Nails sind in 3 einfachen Schritten aufgetragen! Nie wieder pinseln, vermalen oder ewig trocknen. Mit Nailful bist du sofort einsatzbereit.",
             "link_text": "",
             "link": "#"
           }
@@ -38,7 +38,6 @@
         "c026c384-f85a-40d8-a1ea-df7cc61a1272": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Unbenanntes_Projekt8.png",
             "title": "1 Minute aushärten"
           }
         }
@@ -129,8 +128,8 @@
         "subheading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/trial.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -144,7 +143,6 @@
         "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_banner_Image01_1920x_7038b1ff-24df-411b-88f9-d2e385e6421c.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -164,7 +162,6 @@
         "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_banner_Image01_1920x_4fc5b3d2-9a19-42bf-932c-3646c3c195fb.jpg",
             "title": "",
             "text": "",
             "link_label": "",
