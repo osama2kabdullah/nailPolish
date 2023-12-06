@@ -128,7 +128,7 @@ var drawer = function () {
     const html = `
       <div class="selected-image-wrapper">
         <div class="cross-icond">X</div>
-        <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 150px;">
+        <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 100%;">
         <label style="text-align: center; display: block;" for="${indexNumber}">Design ${indexNumber}</label>
         <input variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
       </div>
