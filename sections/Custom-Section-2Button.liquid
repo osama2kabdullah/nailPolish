@@ -10,22 +10,22 @@
 
   <div class="block-container">
     {% if section.settings.logo1 != blank or section.settings.link1 != blank or section.settings.name1 != blank %}
-    <div class="block">
-      {% if section.settings.logo1 != blank %}
-        <img src="{{ section.settings.logo1 | img_url: 'medium' }}" alt="Logo 1">
-      {% endif %}
-
-      {% if section.settings.link1 != blank %}
-        <a href="{{ section.settings.link1 }}" class="button button--primary">{{ section.settings.button1_text }}</a>
-      {% endif %}
-
-      {% if section.settings.name1 != blank %}
-        <p>{{ section.settings.name1 }}</p>
-      {% endif %}
-    </div>
+      <div class="block">
+        {% if section.settings.logo1 != blank %}
+          <img src="{{ section.settings.logo1 | img_url: 'medium' }}" alt="Logo 1">
+        {% endif %}
+  
+        {% if section.settings.link1 != blank %}
+          <a href="{{ section.settings.link1 }}" class="button button--primary">{{ section.settings.button1_text }}</a>
+        {% endif %}
+  
+        {% if section.settings.name1 != blank %}
+          <p>{{ section.settings.name1 }}</p>
+        {% endif %}
+      </div>
     {% endif %}
 
-    {% if section.settings.logo2 != blank or section.settings.link2 != blank or section.settings.name2 != blank %}
+    {% if section.settings.logo2 != blank or section.settings.button2_text != blank %}
     <div class="block">
       {% if section.settings.logo2 != blank %}
         <img src="{{ section.settings.logo2 | img_url: 'medium' }}" alt="Logo 2">

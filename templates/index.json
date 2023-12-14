@@ -10,19 +10,19 @@
             "heading_size": "h1"
           }
         },
-        "04455753-63b8-4f0e-bfc1-3e1065cab3fc": {
-          "type": "caption",
-          "settings": {
-            "caption": "AUFKLEBEN, KÜRZEN, AUSHÄRTEN, FERTIG!",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Die wohl einfachste und schnellste UV Gel Maniküre. Ergebnisse wie aus dem Nagelstudio!<\/p>",
+            "text": "<p><strong>AUFKLEBEN, KÜRZEN, AUSHÄRTEN - FERTIG!<\/strong><\/p>",
             "text_style": "body"
+          }
+        },
+        "04455753-63b8-4f0e-bfc1-3e1065cab3fc": {
+          "type": "caption",
+          "settings": {
+            "caption": "Die wohl einfachste und schnellste UV Gel Maniküre. Ergebnisse wie aus dem Nagelstudio!",
+            "text_style": "subtitle",
+            "text_size": "large"
           }
         },
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-button-1": {
@@ -36,8 +36,8 @@
       },
       "block_order": [
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-heading-1",
-        "04455753-63b8-4f0e-bfc1-3e1065cab3fc",
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-text-1",
+        "04455753-63b8-4f0e-bfc1-3e1065cab3fc",
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-button-1"
       ],
       "settings": {
@@ -61,7 +61,7 @@
         "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Salonschoen_2_58x_d2c29155-3885-454b-8f80-911606ce3f63.svg",
+            "image": "shopify:\/\/shop_images\/Nail-shop-with-finger-nail_3c8d1d25-4285-4bb5-a7fe-c8f72260e594.png",
             "title": "",
             "text": "<p>Ergebnisse wie aus dem Nagelstudio<\/p>",
             "link_label": "",
@@ -71,7 +71,7 @@
         "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/staerkt-schuertztNaegel_58x_256c2f51-7418-4706-b3db-826ef979edb3.svg",
+            "image": "shopify:\/\/shop_images\/Vegan.png",
             "title": "",
             "text": "<p>Vegan<\/p>",
             "link_label": "",
@@ -81,9 +81,9 @@
         "template--19649408500038__9661a4cc-9282-418a-85e8-67742fc43de3-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vegan_58x_a9981b60-753f-4efd-b5ce-142a810b335c.svg",
+            "image": "shopify:\/\/shop_images\/Piggy-bank_f65a668f-9259-4caa-a92c-b8508b172960.png",
             "title": "",
-            "text": "<p>Stärkt & schütz <br\/>deine Nägel<\/p>",
+            "text": "<p>Geld sparen<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -91,9 +91,9 @@
         "2f827ebb-5b2c-44ed-80f4-1728f88b5d3c": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nur2_49_58x_4c6387af-205e-4fd9-bc12-9f3e3903492d.svg",
+            "image": "shopify:\/\/shop_images\/nail-with-heart_174fa696-917b-4aa8-9ab2-d72f90e9793d.png",
             "title": "",
-            "text": "<p>Passt auf alle Nagelformen<\/p>",
+            "text": "<p>Stärkt & schütz <br\/>deine Nägel<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -101,7 +101,7 @@
         "c7105343-5281-425b-96dc-a64bc801f29d": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kurze-langeNaegel_58x_d27d0513-a856-4ca9-b68d-9dbd03fa460b.svg",
+            "image": "shopify:\/\/shop_images\/Easy-to-use_2f83be1e-8019-4715-9fb1-83a1d31cc74d.png",
             "title": "",
             "text": "<p>Super einfache<br\/>Anwendung<\/p>",
             "link_label": "",
@@ -111,9 +111,9 @@
         "39109e1f-6a87-4c03-9076-15bcf72b56dd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kein_UV_58x_c46737fa-d083-41da-be5b-f8c83d14550e.svg",
+            "image": "shopify:\/\/shop_images\/Long-lasting.png",
             "title": "",
-            "text": "<p>Langer halt<\/p>",
+            "text": "<p>Langer Halt<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -140,8 +140,38 @@
         "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 12
+      }
+    },
+    "05c6d2c9-61e7-4856-9e53-b3259c7b39ea": {
+      "type": "image-with-text",
+      "blocks": {
+        "5b787727-2133-447b-a75a-84a5fa1c8e6b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kein vermalen mehr! So einfach waren perfekte Gelnägel noch nie!",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "5b787727-2133-447b-a75a-84a5fa1c8e6b"
+      ],
+      "settings": {
+        "heading": "",
+        "image": "shopify:\/\/shop_images\/copy_2DA7E320-0144-42D6-8CFE-D09BCC96C701.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
         "padding_top": 36,
-        "padding_bottom": 4
+        "padding_bottom": 0
       }
     },
     "57965171-3173-4110-b98b-fe003b368846": {
@@ -187,23 +217,23 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 68,
+        "padding_bottom": 56
       }
     },
     "eb5d7e8d-f5ef-4d51-9ff4-b01c7d4b2e99": {
       "type": "video",
       "settings": {
-        "heading": "Was ist Nailful? und warum?",
-        "subheading": "In 2 Minuten erklärt",
+        "heading": "Was ist Nailful? und warum du Nailful brauchst:",
+        "subheading": "In nur 2 Minuten erklärt",
         "heading_size": "h2",
         "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
+        "video": "shopify:\/\/files\/videos\/copy_F8625433-3C2C-474E-B70F-166AEE42753E.mov",
         "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "background-2",
-        "padding_top": 36,
+        "padding_top": 68,
         "padding_bottom": 36
       }
     },
@@ -243,10 +273,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 60
       }
     },
     "ea67bbec-67d4-4098-9cdc-a37157c487a5": {
@@ -283,7 +313,7 @@
         "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-button-1"
       ],
       "settings": {
-        "icon": "shopify:\/\/shop_images\/t2.png",
+        "icon": "shopify:\/\/shop_images\/Nail-shop-with-finger-nail_3c8d1d25-4285-4bb5-a7fe-c8f72260e594.png",
         "heading": "Ergebnisse wie aus dem Nagelstudio",
         "image": "shopify:\/\/shop_images\/D9760842-4253-463A-9592-67427D11F052.jpg",
         "height": "medium",
@@ -295,7 +325,7 @@
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 60,
         "padding_bottom": 36
       }
     },
@@ -323,11 +353,11 @@
         "template--19649408500038__cef951b3-0707-4582-9846-ae07c2ec5a9d-text-1"
       ],
       "settings": {
-        "icon": "shopify:\/\/shop_images\/t.png",
+        "icon": "shopify:\/\/shop_images\/Long-lasting.png",
         "heading": "3 Wochen langer halt ohne abzusplittern!",
         "image": "shopify:\/\/shop_images\/abwasch.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
+        "height": "medium",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
@@ -335,7 +365,7 @@
         "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 60,
         "padding_bottom": 36
       }
     },
@@ -372,10 +402,10 @@
         "12afa903-3f87-4761-b949-82d9c6adbf79"
       ],
       "settings": {
-        "icon": "shopify:\/\/shop_images\/t2.png",
+        "icon": "shopify:\/\/shop_images\/Easy-to-use_2f83be1e-8019-4715-9fb1-83a1d31cc74d.png",
         "heading": "Einfache Anwendung",
-        "image": "shopify:\/\/shop_images\/einfache_anwendung.jpg",
-        "height": "small",
+        "image": "shopify:\/\/shop_images\/copy_34341F0C-812A-46A2-9204-3A7CA1472029.gif",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
@@ -384,7 +414,7 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 60,
         "padding_bottom": 36
       }
     },
@@ -402,7 +432,7 @@
         "template--19649408500038__4f61ab33-a437-487e-9d19-64ae0ffb75d3-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>SCHONEND UND SCHNELL!<\/strong><br\/>Kein abfräsen oder abfeilen mehr!<br\/>Entferne die Nailful UV Streifen ganz einfach mit dem enthaltenen Holzstäbchen und unserem 2in1 Öl Elexir in wenigen Minuten.<\/p>",
+            "text": "<p><strong>SCHONEND UND SCHNELL!<\/strong><br\/>Kein abfräsen oder abfeilen mehr!<br\/>Entferne die Nailful UV Streifen ganz einfach in wenigen Minuten mit dem enthaltenen Holzstäbchen und unserem 2in1 Öl Elexir.<\/p>",
             "text_style": "body"
           }
         },
@@ -421,11 +451,11 @@
         "0f712093-340a-4591-ad16-925a2c8355a0"
       ],
       "settings": {
-        "icon": "shopify:\/\/shop_images\/t.png",
+        "icon": "shopify:\/\/shop_images\/check-mark-with-heart.png",
         "heading": "Einfache und schonende Entfernung",
-        "image": "shopify:\/\/shop_images\/D9760842-4253-463A-9592-67427D11F052.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
+        "image": "shopify:\/\/shop_images\/Kopie_von_OHNE.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "bottom",
         "desktop_content_alignment": "center",
@@ -433,6 +463,53 @@
         "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "0ad3ca94-8b5a-4572-9415-8728f273e78b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Aus was bestehen die UV Gel Streifen?",
+            "heading_size": "h1"
+          }
+        },
+        "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die Nailful UV Gel Streifen bestehen aus echtem Gel. Und werden erst nach dem aufkleben vollständig in der UV Lampe ausgehärtet.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zu den Farben",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-heading-1",
+        "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-text-1",
+        "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-button-1"
+      ],
+      "settings": {
+        "heading": "",
+        "image": "shopify:\/\/shop_images\/copy_590CD7F2-AF80-4C4F-B666-D07029156B7F.gif",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -443,7 +520,7 @@
         "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_148_63x_e56e32c3-95ae-423d-abd2-a19e7fdeb75d.png",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_15.png",
             "title": "<strong>WOW!<\/strong>",
             "text": "<p>Krass wie einfach das funktioniert! Und dass es so lange hält, hätte ich echt nicht gedacht!<br\/>Ich kaufe mir direkt weitere Farben😍<\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><h3><strong>Lena<\/strong><br\/>Verifiziert<\/h3>",
             "link_label": "",
@@ -453,7 +530,7 @@
         "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_148.png",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_15.png",
             "title": "<strong>Kinderleicht<\/strong>",
             "text": "<p>Ich bin wirklich nicht so geschickt und hatte deshalb Angst es könnte schief gehen.. aber was soll ich sagen ich habe es ohne Probleme geschafft! <\/p><p>Dank der Anleitung Videos kann man nichts falsch machen, bin begeistert!<\/p><p><\/p><h3><strong>Nadine<\/strong><br\/>Verifiziert<\/h3>",
             "link_label": "",
@@ -463,7 +540,7 @@
         "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_148_63x_e56e32c3-95ae-423d-abd2-a19e7fdeb75d.png",
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_15.png",
             "title": "<strong>Begeistert!<\/strong>",
             "text": "<p>Ich schreibe eigentlich keine Bewertungen, aber ich muss echt sagen ich hatte vorher andere UV Gel Streifen und die waren bei weitem nicht so gut! eure sind die einzigen die mich wirklich überzeugt haben und super funktionieren👍 Danke!<\/p><h3><strong>Sophie<\/strong><br\/>Verifiziert<\/h3>",
             "link_label": "",
@@ -477,7 +554,7 @@
         "template--19649408500038__e6611c65-73f1-4787-9eae-3f90f98d81e4-column-3"
       ],
       "settings": {
-        "title": "Unsere Community ist begeistert.",
+        "title": "",
         "heading_size": "h1",
         "image_width": "fourth",
         "image_ratio": "adapt",
@@ -486,57 +563,10 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "36bf1999-ec51-4642-9b19-055824ccf6f2": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sichere dir jetzt dein Starter Set",
-            "heading_size": "h2"
-          }
-        },
-        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Inhalt: 4 Farben deiner Wahl, UV Lampe + 2in1 Pflege\/Entferner Öl Elexir.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "zum Starter Set",
-            "button_link": "shopify:\/\/products\/uvg-starter-set",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-heading-1",
-        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-text-1",
-        "template--19649408500038__36bf1999-ec51-4642-9b19-055824ccf6f2-button-1"
-      ],
-      "settings": {
-        "heading": "",
-        "image": "shopify:\/\/shop_images\/einfache_anwendung.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 68,
         "padding_bottom": 36
       }
     },
@@ -546,7 +576,7 @@
         "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Versand_1_100x_4102459c-8999-4426-a093-616d2524ae1f.svg",
+            "image": "shopify:\/\/shop_images\/delivery.png",
             "title": "Kostenloser Versand",
             "text": "<p>Ab einer Bestellung von 45€ bekommst du bereits einen kostenfreien Versand.<\/p>",
             "link_label": "",
@@ -556,7 +586,7 @@
         "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Support_100x_1ed182a0-63ee-4de7-aa99-89758ce78495.svg",
+            "image": "shopify:\/\/shop_images\/mail_eb740d09-71fc-4e6a-9c27-44db9332941a.png",
             "title": "Kundensupport",
             "text": "<p>Wir sind bei Fargen jederzeit für dich erreichbar.<\/p>",
             "link_label": "",
@@ -566,7 +596,7 @@
         "template--19649408500038__ca88c0d6-1339-48e8-b041-0b92f50d47ad-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sichere-zahlung_110x_45b52e60-03af-4dd8-8730-31365968cf86.svg",
+            "image": "shopify:\/\/shop_images\/warrenty.png",
             "title": "Sichere Bezahlung",
             "text": "<p>Garantiere sichere Bezahlung, bei deiner Bestellung.<\/p>",
             "link_label": "",
@@ -576,8 +606,8 @@
         "53d17514-703b-4a33-8667-5bf1f2ce6bf3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kunden_100x_a7c6cbfd-078d-4a43-84bc-3b1ff3ad6f23.svg",
-            "title": "Zufriedenheitsgarantie",
+            "image": "shopify:\/\/shop_images\/Heart.png",
+            "title": "100% Garantie",
             "text": "<p>Solltest du nicht zufrieden sein, bekommst du dein Geld zurück!<\/p>",
             "link_label": "",
             "link": ""
@@ -607,11 +637,39 @@
         "padding_bottom": 36
       }
     },
+    "0d298d38-ebea-401f-ad3c-965a1c64aacc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Zu den Set's mit deinen Lieblingsfarben",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "sets-1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "c01f6f21-789a-40c9-a43d-a00ef6749308": {
       "type": "featured-collection",
       "settings": {
-        "title": "Hole dir deine Lieblingsfarbe!",
-        "heading_size": "h1",
+        "title": "Zu den Farben",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -622,7 +680,7 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -638,16 +696,15 @@
     "aead315c-c7e8-4ce3-9d11-cc776f74d99d": {
       "type": "Custom-Section-2Button",
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "title": "Brauchst du Hilfe?",
         "subtitle": "Wir beantworten jederzeit gerne deine Fragen!",
-        "logo1": "shopify:\/\/shop_images\/mail.png",
+        "logo1": "shopify:\/\/shop_images\/mail_eb740d09-71fc-4e6a-9c27-44db9332941a.png",
         "link1": "shopify:\/\/pages\/contact",
         "button1_text": "Schreibe uns eine Mail",
         "name1": "",
-        "logo2": "shopify:\/\/shop_images\/talk.png",
         "link2": "shopify:\/\/pages\/contact",
-        "button2_text": "Chatte mit uns",
+        "button2_text": "",
         "name2": ""
       }
     },
@@ -775,14 +832,14 @@
         "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-text-1": {
           "type": "text",
           "settings": {
-            "text": "<h2>Solltest du nicht zufrieden sein, bekommst du dein Geld zurück!<\/h2>"
+            "text": "<h2>Wenn du nicht zufrieden bist, bekommst du dein Geld zurück!<\/h2>"
           }
         },
         "template--19649408500038__b086903e-bce2-4bd7-9e90-636c2944a5a7-button-1": {
           "type": "button",
           "settings": {
             "button_label": "Mehr erfahren",
-            "button_link": "shopify:\/\/collections\/uv-lampen",
+            "button_link": "shopify:\/\/pages\/geld-zuruck-garantie",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -808,6 +865,7 @@
   "order": [
     "5818eb69-f413-4dd3-9034-11e732c3ff8c",
     "9661a4cc-9282-418a-85e8-67742fc43de3",
+    "05c6d2c9-61e7-4856-9e53-b3259c7b39ea",
     "57965171-3173-4110-b98b-fe003b368846",
     "eb5d7e8d-f5ef-4d51-9ff4-b01c7d4b2e99",
     "a73287da-4b86-49be-b0ff-5086572e3df2",
@@ -815,9 +873,10 @@
     "cef951b3-0707-4582-9846-ae07c2ec5a9d",
     "25188c80-318f-4cc6-94a3-2941afebd828",
     "4f61ab33-a437-487e-9d19-64ae0ffb75d3",
+    "0ad3ca94-8b5a-4572-9415-8728f273e78b",
     "e6611c65-73f1-4787-9eae-3f90f98d81e4",
-    "36bf1999-ec51-4642-9b19-055824ccf6f2",
     "ca88c0d6-1339-48e8-b041-0b92f50d47ad",
+    "0d298d38-ebea-401f-ad3c-965a1c64aacc",
     "c01f6f21-789a-40c9-a43d-a00ef6749308",
     "aead315c-c7e8-4ce3-9d11-cc776f74d99d",
     "bf2938b7-4038-47fd-b28a-58924aba9ba8",

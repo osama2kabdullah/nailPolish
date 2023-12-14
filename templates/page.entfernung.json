@@ -1,5 +1,21 @@
 {
   "sections": {
+    "6a1849a2-b5df-4d99-b4b8-d3407c097105": {
+      "type": "video",
+      "settings": {
+        "heading": "Entfernung, Schritt für Schritt:",
+        "subheading": "",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/copy_BC2BC769-BA81-4225-9D22-3E8B80DF7CD7.mov",
+        "video_url": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -14,9 +30,9 @@
         "9f0fcbc0-ac29-4c50-9161-b43e6f71dcf2": {
           "type": "text",
           "settings": {
-            "text_subtitle": "Schritt 7:",
-            "text_title": "Unter UV LED Lampe aushärten",
-            "general_text": "Schließe die UV LED Lampe an eine Stromquelle an. Platziere deinen Zeige-, Mittel, Ring- und kleinen Finger mittig unter der UV LED Lampe und schalte sie ein. Warte 1 Minute. Die NAILFUL UV LED Lampe schaltet sich automatisch aus. Härte deine Daumen separat aus.",
+            "text_subtitle": "",
+            "text_title": "",
+            "general_text": "",
             "link_text": "",
             "link": ""
           }
@@ -24,21 +40,22 @@
         "b216a898-5936-4096-945f-53d8ec6e601b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
-            "title": "Größe wählen & aufkleben"
+            "image": "shopify:\/\/shop_images\/IMG_6240.jpg",
+            "title": "Mit dem Holzstäbchen den Streifen anheben"
           }
         },
         "783fb142-7914-4f42-88e1-93b2c39785df": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step2_1920x_7a9408e4-32be-47b6-adca-a4bf1473f802.png",
-            "title": "Größe wählen & aufkleben"
+            "image": "shopify:\/\/shop_images\/IMG_6332.jpg",
+            "title": "2in1 Elexir auftragen"
           }
         },
         "f59594da-5ab2-4e7b-8506-c09173ea8112": {
           "type": "image",
           "settings": {
-            "title": "Größe wählen & aufkleben"
+            "image": "shopify:\/\/shop_images\/entfernung2.jpg",
+            "title": "Holzstäbchen hin und her schieben, Fertig!"
           }
         }
       },
@@ -50,7 +67,7 @@
       ],
       "settings": {
         "title": "Entfernung Anleitung",
-        "subtitle": "",
+        "subtitle": "Schonend, schnell & Einfach!",
         "color_scheme": ""
       }
     },
@@ -60,7 +77,7 @@
         "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KeinAbfeilen_1920x_1232d682-5267-459e-b919-eeec208ca7e0.png",
+            "image": "shopify:\/\/shop_images\/No-filling-anymore.png",
             "title": "Kein Abfräsen",
             "text": "<p>oder runterfeilen<\/p>",
             "link_label": "",
@@ -70,7 +87,7 @@
         "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hema-free_1920x_eb2236c6-b194-44b1-9bdf-64544dd79dae.png",
+            "image": "shopify:\/\/shop_images\/no-acetone.png",
             "title": "Kein Aceton",
             "text": "<p>oder Chemikalien<\/p>",
             "link_label": "",
@@ -80,7 +97,7 @@
         "template--19836616180038__bfe631dd-726c-4005-a498-d27fcc52c12c-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gelpolish_1920x_93edffe2-da17-4fcb-90fc-af001b2d7933.png",
+            "image": "shopify:\/\/shop_images\/droplet.png",
             "title": "Entferner auf Öl-Basis",
             "text": "<p>mit natürlichen Inhaltsstoffen<\/p>",
             "link_label": "",
@@ -90,7 +107,7 @@
         "86438dd2-fa08-41e8-a280-a5584fd55b55": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GesunderNagel_1920x_bcabdb9f-7f18-4c59-ac27-0bb2920476eb.png",
+            "image": "shopify:\/\/shop_images\/nail-with-heart.png",
             "title": "Schonend für die Nägel",
             "text": "<p>deine Nägel bleiben gesund<\/p>",
             "link_label": "",
@@ -114,25 +131,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-b7fc4d31-f2a5-40ef-909a-3eb759710ab5",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "6a1849a2-b5df-4d99-b4b8-d3407c097105": {
-      "type": "video",
-      "settings": {
-        "heading": "Im Video zeigen wir dir die Schritt für Schritt Anleitung",
-        "subheading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
-        "video_url": "",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -143,7 +144,6 @@
         "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step2_1920x_7a9408e4-32be-47b6-adca-a4bf1473f802.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -153,7 +153,7 @@
         "template--19836616180038__2d349da1-7e19-4313-b55b-35b78c04a76d-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "image": "shopify:\/\/shop_images\/Kopie_von_Optional.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -197,23 +197,22 @@
       "settings": {
         "color_scheme": "background-2",
         "title": "Brauchst du Hilfe?",
-        "subtitle": "Kundenzufriedenheit steht bei uns an erster Stelle, deshalb sind wir jederzeit da um deine Fragen zu beantworten!",
-        "logo1": "shopify:\/\/shop_images\/mail.png",
+        "subtitle": "Zögere nicht, wir beantworten gerne deine Fragen!",
+        "logo1": "shopify:\/\/shop_images\/mail_eb740d09-71fc-4e6a-9c27-44db9332941a.png",
         "link1": "#",
         "button1_text": "Schreibe uns eine Mail",
         "name1": "",
-        "logo2": "shopify:\/\/shop_images\/talk.png",
         "link2": "#",
-        "button2_text": "Chatte mit uns",
+        "button2_text": "",
         "name2": ""
       }
     }
   },
   "order": [
+    "6a1849a2-b5df-4d99-b4b8-d3407c097105",
     "main",
     "88c53e94-2d26-419a-8233-6d24c9761641",
     "bfe631dd-726c-4005-a498-d27fcc52c12c",
-    "6a1849a2-b5df-4d99-b4b8-d3407c097105",
     "2d349da1-7e19-4313-b55b-35b78c04a76d",
     "73eeaf9b-c643-46b9-b6c6-7c2cc6aee1bb"
   ]

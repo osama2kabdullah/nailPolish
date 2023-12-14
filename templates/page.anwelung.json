@@ -8,6 +8,22 @@
         "padding_bottom": 28
       }
     },
+    "e49737df-4f9b-4ed4-ad48-696c8d82a09e": {
+      "type": "video",
+      "settings": {
+        "heading": "Anwendung, Schritt für Schritt erklärt:",
+        "subheading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/copy_29C4E9A5-ACCD-4443-9828-E2D7915D6FE9.mov",
+        "video_url": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "01d91847-8ca1-449e-9083-417b9ddfa3ba": {
       "type": "three-images",
       "blocks": {
@@ -24,20 +40,21 @@
         "680b54c1-2bf0-4300-8343-23471ea1bd49": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "image": "shopify:\/\/shop_images\/anwendung.jpg",
             "title": "Größe wählen & aufkleben"
           }
         },
         "7286a0a8-40ea-42b0-97e3-192bcc849ef8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step2_1920x_7a9408e4-32be-47b6-adca-a4bf1473f802.png",
+            "image": "shopify:\/\/shop_images\/anwendung3.jpg",
             "title": "Überschuss abfeilen"
           }
         },
         "c026c384-f85a-40d8-a1ea-df7cc61a1272": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ANWENDUNG5.jpg",
             "title": "1 Minute aushärten"
           }
         }
@@ -60,9 +77,9 @@
         "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KeinVermalen_1920x_a313cf95-157c-4535-b84d-475645164f50.png",
-            "title": "Kein Vermalen mehr",
-            "text": "<p>Immer ein sauberes Ergebnis<\/p>",
+            "image": "shopify:\/\/shop_images\/Long-lasting.png",
+            "title": "Schnelle Anwendung",
+            "text": "<p>Perfektes Ergebnis in nur 10 Minuten<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -70,9 +87,9 @@
         "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KeineLiquids_1920x_13b2893f-2bc0-4ade-b9fc-2a8ef40e5fed.png",
+            "image": "shopify:\/\/shop_images\/no-liquids-anymore.png",
             "title": "Keine Flüssigkeiten",
-            "text": "<p>und kein Lösungsmittel-Geruch<\/p>",
+            "text": "<p>Kein unangenehmer Geruch von Flüssigkeiten<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -80,9 +97,9 @@
         "template--19836615721286__1d6b5236-35a4-4ba2-861a-3bb0847ffb7b-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Trockenzeiten_1920x_259e97fb-3f9b-41b6-a6aa-ed9002a792ca.png",
+            "image": "shopify:\/\/shop_images\/uv-nail-lamp.png",
             "title": "Keine Trockenzeiten",
-            "text": "<p>Ausgehärtet in nur 1 Minute<\/p>",
+            "text": "<p>In 1 Minute ausgehärtet<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -90,9 +107,9 @@
         "99eef13e-6c72-4e35-a039-8a6b0017100c": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SchnelleAnwendung_1920x_f8e6b776-63ff-456a-9779-304d41d2e030.png",
-            "title": "Schnelle Anwendung",
-            "text": "<p>in nur 15 Minuten<\/p>",
+            "image": "shopify:\/\/shop_images\/No-smudging-anymore.png",
+            "title": "Kein Vermalen mehr",
+            "text": "<p>Ein sauberes Ergebnis ist garantiert<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -114,25 +131,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-b7fc4d31-f2a5-40ef-909a-3eb759710ab5",
+        "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "e49737df-4f9b-4ed4-ad48-696c8d82a09e": {
-      "type": "video",
-      "settings": {
-        "heading": "Im Video zeigen wir dir die Schritt für Schritt Anleitung",
-        "subheading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
-        "video_url": "",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -143,6 +144,7 @@
         "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6330.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -152,7 +154,7 @@
         "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/step1_1920x_6775c6e0-8556-49f9-800d-2544fc04e90b.png",
+            "image": "shopify:\/\/shop_images\/IMG_6331.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -162,6 +164,7 @@
         "template--19836615721286__f80b6112-415b-4f22-97a0-97dcd96623e4-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6329.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -197,22 +200,21 @@
         "color_scheme": "background-2",
         "title": "Brauchst du Hilfe?",
         "subtitle": "Kundenzufriedenheit steht bei uns an erster Stelle, deshalb sind wir jederzeit da um deine Fragen zu beantworten!",
-        "logo1": "shopify:\/\/shop_images\/mail.png",
+        "logo1": "shopify:\/\/shop_images\/mail_eb740d09-71fc-4e6a-9c27-44db9332941a.png",
         "link1": "#mail",
         "button1_text": "Schreibe uns eine Mail",
         "name1": "",
-        "logo2": "shopify:\/\/shop_images\/talk.png",
         "link2": "#chat",
-        "button2_text": "Chatte mit uns",
+        "button2_text": "",
         "name2": ""
       }
     }
   },
   "order": [
     "main",
+    "e49737df-4f9b-4ed4-ad48-696c8d82a09e",
     "01d91847-8ca1-449e-9083-417b9ddfa3ba",
     "1d6b5236-35a4-4ba2-861a-3bb0847ffb7b",
-    "e49737df-4f9b-4ed4-ad48-696c8d82a09e",
     "f80b6112-415b-4f22-97a0-97dcd96623e4",
     "1281aab5-0812-4ea0-aafb-9c3f5e406e06"
   ]

@@ -84,6 +84,7 @@
 }
 .design-drawer__content img {
   width: 100%;
+  height:auto;
 }
 .design-drawer--left .design-drawer__wrapper {
   left: 0;

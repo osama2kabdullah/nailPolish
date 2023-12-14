@@ -41,6 +41,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "a836d62a-7cc2-40d5-8b65-2a5df20751ae": {
+          "type": "shopify:\/\/apps\/trust-badges-bear\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -57,22 +61,19 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "heart",
-            "image_1": "shopify:\/\/shop_images\/secure-payment-96.png",
-            "heading_1": "Kauf auf Rechnung mit Klarna",
+            "heading_1": "Zufriedenheitsgarantie",
             "icon_2": "return",
-            "image_2": "shopify:\/\/shop_images\/Bus-icon-removebg-preview.png",
-            "heading_2": "Kostenloser Rückversand",
+            "heading_2": "Geld zurück Garntie",
             "icon_3": "truck",
-            "image_3": "shopify:\/\/shop_images\/t2.png",
-            "heading_3": "45 Tage Geld-Zurück-Garantie"
+            "heading_3": "Schnelle Lieferung"
           }
         },
         "d88a6331-3cf1-4310-8776-4af4d8752545": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Produktinfo",
-            "icon": "none",
-            "content": "<p>✔️ Hält bis zu 3 Wochen<br\/><br\/>✔️ Kein Lack notwendig<br\/><br\/>✔️ Einfache Entfernung<br\/><br\/>✔️ Perfekt für den Urlaub<\/p>",
+            "icon": "star",
+            "content": "<p>✔️ Hält bis zu 3 Wochen<br\/><br\/>✔️ NICHT schädlich. Deine Nägel bleiben gesund!<\/p><p>✔️ Einfache Anwendung und Entfernung<br\/><br\/>✔️ Ergebnisse wie aus dem Nagelstudio <\/p>",
             "page": ""
           }
         },
@@ -80,8 +81,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Anwendung",
-            "icon": "none",
-            "content": "",
+            "icon": "question_mark",
+            "content": "<p>Die Anwendung ist so einfach wie noch nie!<br\/>Aufkleben, kürzen, aushärten und fertig!<br\/>Im Menü unter Tutorials findest du nochmal die genaue Schritt für Schritt Anwendung.<\/p>",
             "page": ""
           }
         }
@@ -94,6 +95,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "a836d62a-7cc2-40d5-8b65-2a5df20751ae",
         "description",
         "share",
         "bd7a4379-4a5b-47ae-a803-c0c1c7f52cdf",
@@ -146,8 +148,8 @@
         "description": "",
         "full_width": false,
         "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 76,
+        "padding_bottom": 84
       }
     },
     "adf1fdf0-e08f-48f0-9002-e7c9f39ff966": {
@@ -156,8 +158,8 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Salonschoen_2_58x_d2c29155-3885-454b-8f80-911606ce3f63.svg",
-            "title": "Salonschöne Ergebnisse",
+            "image": "shopify:\/\/shop_images\/Nail-shop-with-finger-nail_3c8d1d25-4285-4bb5-a7fe-c8f72260e594.png",
+            "title": "Ergebnisse wie aus dem Nagelstudio",
             "text": "",
             "link_label": "",
             "link": ""
@@ -166,8 +168,8 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/staerkt-schuertztNaegel_58x_256c2f51-7418-4706-b3db-826ef979edb3.svg",
-            "title": "Stärkt & schützt den Nagel",
+            "image": "shopify:\/\/shop_images\/Vegan_0a6e337f-7bfe-4975-97f5-c4124d0ba548.png",
+            "title": "Vegan",
             "text": "",
             "link_label": "",
             "link": ""
@@ -176,8 +178,8 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vegan_58x_a9981b60-753f-4efd-b5ce-142a810b335c.svg",
-            "title": "Vegan & Tierversuchsfrei",
+            "image": "shopify:\/\/shop_images\/Piggy-bank_f65a668f-9259-4caa-a92c-b8508b172960.png",
+            "title": "Geld sparen",
             "text": "",
             "link_label": "",
             "link": ""
@@ -186,8 +188,8 @@
         "ebb71c59-5f02-4152-91e3-5c4f7990cff6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nur2_49_58x_4c6387af-205e-4fd9-bc12-9f3e3903492d.svg",
-            "title": "Nur 2,49€ pro Maniküre",
+            "image": "shopify:\/\/shop_images\/nail-with-heart_174fa696-917b-4aa8-9ab2-d72f90e9793d.png",
+            "title": "Stärkt uns schützt deine Nägel",
             "text": "",
             "link_label": "",
             "link": ""
@@ -196,8 +198,8 @@
         "3b73e6b8-2226-4d43-87d3-84e9e493f2aa": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kurze-langeNaegel_58x_d27d0513-a856-4ca9-b68d-9dbd03fa460b.svg",
-            "title": "Für alle Nagel-Typen",
+            "image": "shopify:\/\/shop_images\/Easy-to-use_2f83be1e-8019-4715-9fb1-83a1d31cc74d.png",
+            "title": "Super einfache Anwendung",
             "text": "",
             "link_label": "",
             "link": ""
@@ -206,8 +208,8 @@
         "5378812e-80f8-4b68-b84a-22e00d568d76": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kein_UV_58x_c46737fa-d083-41da-be5b-f8c83d14550e.svg",
-            "title": "Keine UV Lampe nötig",
+            "image": "shopify:\/\/shop_images\/Long-lasting_1a66c20e-fd25-4389-a704-400d06239c8f.png",
+            "title": "Langer Halt",
             "text": "",
             "link_label": "",
             "link": ""
@@ -235,7 +237,7 @@
         "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 76,
         "padding_bottom": 36
       }
     }

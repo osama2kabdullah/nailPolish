@@ -39,13 +39,9 @@
     }
   {%- endif -%}
 
-  {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 990px) {
-      header-drawer {
-        display: none;
-      }
-    }
-  {%- endif -%}
+  header-drawer {
+    display: none;
+  }
 
   .menu-drawer-container {
     display: flex;
