@@ -221,7 +221,8 @@
                                     style="width: 50px;"
                                     src="{{ Product.featured_image | img_url: '150x' }}"
                                     alt=""
-                                  >
+                                  ><br>
+                                  <small>{{ Product.title | replace: "Copy of ", ""}}</small>
                                 </dd>
                                 <dd style="text-decoration: line-through;">
                                   {{ DesirecartItem.original_line_price | money }}

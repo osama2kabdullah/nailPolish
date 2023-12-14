@@ -259,11 +259,12 @@
                                       </dt>
                                       <dd>
                                         <img
-                                          style="width: 50px;"
+                                          style="width: 80px;"
                                           src="{{ Product.featured_image | img_url: '150x' }}"
                                           alt=""
                                         >
                                         <br>
+                                        <small>{{ Product.title | replace: "Copy of ", ""}}</small>
                                       </dd>
                                     </div>
                                   {% else %}
