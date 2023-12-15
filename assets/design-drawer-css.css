@@ -102,3 +102,7 @@
 .design-drawer.is-visible .design-drawer__overlay {
   opacity: 0.5;
 }
+.unavaibale-darwer-product {
+  pointer-events: none;
+  opacity: 0.6;
+}
