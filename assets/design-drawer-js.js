@@ -124,6 +124,14 @@ var drawer = function () {
     const requredNumber = parseInt(toImage.getAttribute("requred-number"));
     const isOptional = toImage.getAttribute("optional");
     const selectedVariantId = inputBox.getAttribute("varId");
+    const selectedVariantQty = inputBox.getAttribute("quantity");
+    if (selectedVariantQty) {
+      const newQuantity = parseInt(selectedVariantQty) - 1;
+      inputBox.setAttribute("quantity", newQuantity);
+      if (newQuantity < 1) {
+        inputBox.parentElement.parentElement.classList.add("unavaibale-darwer-product")
+      }
+    }
 
     const html = `
       <div class="selected-image-wrapper">
@@ -177,8 +185,16 @@ var drawer = function () {
         divTag.parentNode.replaceChild(toImage, divTag);
       }
 
+      const selectedVariantQty = inputBox.getAttribute("quantity");
+      if (selectedVariantQty) {
+        if (selectedVariantQty < 1) {
+          inputBox.parentElement.parentElement.classList.remove("unavaibale-darwer-product");
+        }
+        const newQuantity = parseInt(selectedVariantQty) + 1;
+        inputBox.setAttribute("quantity", newQuantity);
+      }
       inputBox.checked = false;
-      event.style.pointerEvents = "auto";
+      // event.style.pointerEvents = "auto";
       const addBtn = document.querySelector(".product-form__submit");
       const checkedCheckboxes = document.querySelectorAll(
         'input[isOptional="false"]'

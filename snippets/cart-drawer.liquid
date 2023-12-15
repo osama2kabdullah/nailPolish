@@ -120,12 +120,23 @@
                         assign requredProduct = item.product.metafields.custom.requred_to_add.value | times: 1
                         assign optionalUniqIds = ''
                         assign optionalProductPrices = ''
+                        assign all_asscociated_products = ''
 
                         for property in item.properties
                           if property.first contains '_id_'
                             assign optionalUniqIds = optionalUniqIds | append: '|' | append: property.last
                           endif
+                          if property.first contains 'Design'
+                            assign varint = all_products[property.last].selected_or_first_available_variant
+                            assign availablity = varint.available
+                            assign all_asscociated_products = all_asscociated_products | append: ',' | append: availablity
+                          endif
                         endfor
+
+                        assign prevent = false
+                        if all_asscociated_products contains 'false'
+                          assign prevent = true
+                        endif
 
                         for ite_m in cart.items
                           assign item_index = ite_m.index | plus: 1
@@ -264,7 +275,7 @@
                                           alt=""
                                         >
                                         <br>
-                                        <small>{{ Product.title | replace: "Copy of ", ""}}</small>
+                                        <small>{{ Product.title | replace: 'Copy of ', '' }}</small>
                                       </dd>
                                     </div>
                                   {% else %}
@@ -408,7 +419,14 @@
                                     id="Drawer-quantity-{{ item.index | plus: 1 }}"
                                     data-index="{{ item.index | plus: 1 }}"
                                   >
-                                  <button class="quantity__button no-js-hidden" name="plus" type="button">
+                                  <button
+                                    class="quantity__button no-js-hidden {% if prevent %} disabled{% endif %}"
+                                    {% if prevent %}
+                                      disabled
+                                    {% endif %}
+                                    name="plus"
+                                    type="button"
+                                  >
                                     <span class="visually-hidden">
                                       {{-
                                         'products.product.quantity.increase'
@@ -426,6 +444,7 @@
                                 optionalVariants="{{bundleVariants}}"
                                 bundleVariantsLine="{{ bundleVariantsLine }}"
                                 optionalVariantPrices="{{ optionalUniqIds }}"
+                                prevent="{{ prevent }}"
                               >
                                 <button
                                   type="button"

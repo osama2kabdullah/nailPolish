@@ -27,6 +27,8 @@
               type="checkbox"
               name="{{ product.handle }}"
               varId="{{ product.selected_or_first_available_variant.id }}"
+              quantity="{{ product.selected_or_first_available_variant.inventory_quantity }}"
+              availableQuantity="{{ product.selected_or_first_available_variant.inventory_quantity }}"
               id="{{ product_form_id }}"
             >
           </a>
