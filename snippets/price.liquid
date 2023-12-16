@@ -118,7 +118,13 @@
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
+      {%- if product.compare_at_price > product.price -%}
+      {% assign current = product.price %}
+      {% assign priceDifference = product.compare_at_price | minus: current %}
+      {% assign saving = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round %}
+      {% assign percentage = saving | at_least: percentage %}
+      <span data-discount-save>-{{ percentage }}%</span>
+      {% endif %}
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

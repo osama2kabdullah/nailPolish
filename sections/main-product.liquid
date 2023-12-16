@@ -1,3 +1,9 @@
+{% if product.handle contains 'copy-of' %}
+  <script>
+    window.location.replace("{{ shop.url }}");
+  </script>
+  {% else %}
+
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -683,7 +689,7 @@
     }
   </script>
 </section>
-
+{% endif %}
 {% schema %}
 {
   "name": "t:sections.main-product.name",

@@ -3,8 +3,8 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
+        "title": "PRODUKTE",
+        "sort": "date",
         "image_ratio": "square",
         "columns_desktop": 3,
         "columns_mobile": "2"

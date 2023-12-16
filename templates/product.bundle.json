@@ -40,6 +40,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "a8311548-f14f-4eb3-989c-ef9546b9f2b9": {
+          "type": "shopify:\/\/apps\/trust-badges-bear\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -56,22 +60,19 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "heart",
-            "image_1": "shopify:\/\/shop_images\/secure-payment-96.png",
-            "heading_1": "Kauf auf Rechnung mit Klarna",
+            "heading_1": "Zufriedenheitsgarantie",
             "icon_2": "return",
-            "image_2": "shopify:\/\/shop_images\/Bus-icon-removebg-preview.png",
-            "heading_2": "Kostenloser Rückversand",
+            "heading_2": "Geld zurück Garntie",
             "icon_3": "truck",
-            "image_3": "shopify:\/\/shop_images\/t2.png",
-            "heading_3": "45 Tage Geld-Zurück-Garantie"
+            "heading_3": "Schnelle Lieferung"
           }
         },
         "d88a6331-3cf1-4310-8776-4af4d8752545": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Produktinfo",
-            "icon": "none",
-            "content": "<p>✔️ Hält bis zu 3 Wochen<br\/><br\/>✔️ Kein Lack notwendig<br\/><br\/>✔️ Einfache Entfernung<br\/><br\/>✔️ Perfekt für den Urlaub<\/p>",
+            "icon": "star",
+            "content": "<p>✔️ 3 Wochen langer halt<\/p><p>✔️ Ergebnisse wie aus dem Nagelstudio<\/p><p>✔️ Deine Nägel bleiben Gesund<\/p><p>✔️ Einfachen & schnelle Anwendung\/Entfernung<\/p>",
             "page": ""
           }
         },
@@ -79,8 +80,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Anwendung",
-            "icon": "none",
-            "content": "",
+            "icon": "question_mark",
+            "content": "<p>Die Anwendung ist so einfach wie noch nie!<br\/>Aufkleben, kürzen, aushärten und fertig!<br\/>Im Menü unter Tutorials findest du nochmal die genaue Schritt für Schritt Anwendung.<\/p>",
             "page": ""
           }
         }
@@ -93,6 +94,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "a8311548-f14f-4eb3-989c-ef9546b9f2b9",
         "description",
         "share",
         "bd7a4379-4a5b-47ae-a803-c0c1c7f52cdf",
@@ -102,8 +104,8 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "cover",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
         "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "lightbox",
@@ -136,17 +138,17 @@
     "ab9d8402-5255-4fb4-b9c2-ba1b5e538b08": {
       "type": "video",
       "settings": {
-        "heading": "Was ist Nailcure?",
-        "subheading": "in 1 Minute erklärt",
+        "heading": "Was ist Nailful? Und warum du Nailful brauchst:",
+        "subheading": "Erklärt in 2 Minuten",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/trial.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify:\/\/files\/videos\/copy_3C19C6D0-085A-475B-A9A7-C6E92E1CCB80.mov",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 72
       }
     },
     "adf1fdf0-e08f-48f0-9002-e7c9f39ff966": {
@@ -155,8 +157,8 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Salonschoen_2_58x_d2c29155-3885-454b-8f80-911606ce3f63.svg",
-            "title": "Salonschöne Ergebnisse",
+            "image": "shopify:\/\/shop_images\/Nail-shop-with-finger-nail_3c8d1d25-4285-4bb5-a7fe-c8f72260e594.png",
+            "title": "Ergebnisse wie aus dem Nagelstudio",
             "text": "",
             "link_label": "",
             "link": ""
@@ -165,9 +167,9 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/staerkt-schuertztNaegel_58x_256c2f51-7418-4706-b3db-826ef979edb3.svg",
-            "title": "Column",
-            "text": "<p>Stärkt & schützt den Nagel<\/p>",
+            "image": "shopify:\/\/shop_images\/Vegan_0a6e337f-7bfe-4975-97f5-c4124d0ba548.png",
+            "title": "Vegan",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -175,8 +177,9 @@
         "template--19649408565574__adf1fdf0-e08f-48f0-9002-e7c9f39ff966-column-3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Piggy-bank_f65a668f-9259-4caa-a92c-b8508b172960.png",
+            "title": "Geld sparen",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -184,8 +187,9 @@
         "ebb71c59-5f02-4152-91e3-5c4f7990cff6": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/nail-with-heart_174fa696-917b-4aa8-9ab2-d72f90e9793d.png",
+            "title": "Stärkt und schützt deine Nägel",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -193,8 +197,9 @@
         "3b73e6b8-2226-4d43-87d3-84e9e493f2aa": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Easy-to-use_2f83be1e-8019-4715-9fb1-83a1d31cc74d.png",
+            "title": "Super einfache Anwendung",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -202,8 +207,9 @@
         "5378812e-80f8-4b68-b84a-22e00d568d76": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Long-lasting_1a66c20e-fd25-4389-a704-400d06239c8f.png",
+            "title": "3 Wochen langer halt",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -230,7 +236,7 @@
         "color_scheme": "scheme-86495116-d956-4e8e-a5da-b11839287056",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 72,
         "padding_bottom": 36
       }
     }

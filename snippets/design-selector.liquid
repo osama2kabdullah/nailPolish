@@ -3,11 +3,14 @@
   .select-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
+  }
+  .design-name {
+    text-align: center;
   }
   .select-input {
-    max-width: 150px;
-    height: 200px;
+    max-width: 100%;
+    height: 205px;
     background: #ddd;
     display: flex;
     justify-content: center;
@@ -26,7 +29,7 @@
   }
   .selected-image-wrapper {
     position: relative;
-    width: 150px;
+    width: 100%;
   }
   .cross-icond {
     position: absolute;
@@ -37,12 +40,24 @@
     width: 25px;
     text-align: center;
   }
+  @media only screen and (max-width: 425px){
+    .select-input {
+      height: 150px;
+    }
+    .select-wrapper {
+      gap: 1rem;
+    }
+  }
 {% endstyle %}
+{%liquid
+  assign requredNnumber = product.metafields.custom.requred_to_add.value
+%}
 
-<h2>Choose Design</h2>
+<h2>Wähle deine Designs:</h2>
+
 
 <section class="select-wrapper">
-  {% for i in (1..4) %}
+  {% for i in (1..requredNnumber) %}
     <a
       style="text-decoration: none;"
       href="javascript:void(0)"
@@ -51,18 +66,20 @@
       aria-expanded="false"
       form-id="{{ product_form_id }}"
       index-number="{{ forloop.index }}"
+      requred-number="{{ requredNnumber }}"
       optional="false"
     >
       <div class="select-input">
         <p class="select-icon">+</p>
       </div>
+      <p class="design-name">Design {{ forloop.index }}</p>
     </a>
   {% endfor %}
 </section>
 
 <br>
 <h2>Optional</h2>
-<small>Get 25% discount</small>
+<small>Spare 25% auf jedes weitere Design</small>
 
 <section class="select-wrapper">
   {% for i in (1..1) %}
@@ -73,12 +90,23 @@
       aria-controls="drawer-name"
       aria-expanded="false"
       form-id="{{ product_form_id }}"
-      index-number="{{ forloop.index | plus: 4 }}"
+      index-number="{{ forloop.index | plus: requredNnumber }}"
+      requred-number="{{ requredNnumber }}"
       optional="true"
     >
       <div class="select-input">
         <p class="select-icon">+</p>
       </div>
+      <p class="design-name">Design {{ forloop.index | plus: requredNnumber }}</p>
     </a>
   {% endfor %}
 </section>
+<!--
+dependecy
+
+snippets/design-selector.liquid
+------
+
+assets/design-drawer-js.js
+------
+-->

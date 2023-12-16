@@ -13,16 +13,28 @@
     </div>
 
     <div class="design-drawer__content">
-
-      {% for product in product.metafields.custom.products.value %}
-        <div class="design-image">
-          <a href="#" data-drawer-close aria-label="Close Drawer">
-            {{ product.featured_image | image_url: '720x' | img_tag }}
-            <input class="image-checkbox-here" style="display: none;" type="checkbox" name="{{ product.handle }}" varId="{{ product.selected_or_first_available_variant.id }}" id="{{ product_form_id }}">
+      {% for product in collections.optional.products %}
+        <div class="design-image {% unless product.available %}unavaibale-darwer-product{% endunless %}">
+          <a
+            href="#"
+            data-drawer-close
+            aria-label="Close Drawer"
+          >
+            {{ product.featured_image | image_url: width: 150 | image_tag }}
+            <input
+              class="image-checkbox-here"
+              style="display: none;"
+              type="checkbox"
+              name="{{ product.handle }}"
+              varId="{{ product.selected_or_first_available_variant.id }}"
+              quantity="{{ product.selected_or_first_available_variant.inventory_quantity }}"
+              availableQuantity="{{ product.selected_or_first_available_variant.inventory_quantity }}"
+              id="{{ product_form_id }}"
+            >
           </a>
+          <div style="text-align:center">{{ product.title | replace: 'Copy of ', '' }}</div>
         </div>
       {% endfor %}
-
     </div>
   </div>
 </section>

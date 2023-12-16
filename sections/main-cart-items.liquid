@@ -77,7 +77,64 @@
 
             <tbody>
               {%- for item in cart.items -%}
-                <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
+                {% liquid
+                  assign isOptional = false
+                  assign bundleVariants = ''
+                  assign bundleVariantsLine = ''
+                  assign requredProduct = item.product.metafields.custom.requred_to_add.value | times: 1
+                  assign optionalUniqIds = ''
+                  assign optionalProductPrices = ''
+                  assign all_asscociated_products = ''
+
+                  for property in item.properties
+                    if property.first contains '_id_'
+                      assign optionalUniqIds = optionalUniqIds | append: '|' | append: property.last
+                    endif
+                    if property.first contains 'Design'
+                      assign varint = all_products[property.last].selected_or_first_available_variant
+                      assign availablity = varint.available
+                      assign all_asscociated_products = all_asscociated_products | append: ',' | append: availablity
+                    endif
+                  endfor
+
+                  assign prevent = false
+                  if all_asscociated_products contains 'false'
+                    assign prevent = true
+                  endif
+
+                  for ite_m in cart.items
+                    assign item_index = ite_m.index | plus: 1
+                    for prop in ite_m.properties
+                      if prop.first contains '_uniqueId'
+                        if optionalUniqIds contains prop.last
+                          assign bundleVariants = bundleVariants | append: ',' | append: ite_m.key
+                          assign bundleVariantsLine = bundleVariantsLine | append: ',' | append: item_index
+                          assign optionalProductPrices = optionalProductPrices | append: ',' | append: ite_m.final_line_price
+                        endif
+                      endif
+                    endfor
+                  endfor
+
+                  for property in item.properties
+                    if property.first contains 'Refarance'
+                      assign isOptional = true
+                    endif
+                  endfor
+
+                  assign mainPrice = 0
+                  assign singlePrices = optionalProductPrices | split: ','
+                  for price in singlePrices
+                    assign mainPrice = mainPrice | plus: price
+                  endfor
+                %}
+
+                <tr
+                  {% if isOptional == true %}
+                    style="display: none;"
+                  {% endif %}
+                  class="cart-item"
+                  id="CartItem-{{ item.index | plus: 1 }}"
+                >
                   <td class="cart-item__media">
                     {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -143,17 +200,46 @@
                             <!-- here is the options -->
                             {% if property.first contains 'Design' %}
                               {% assign product_handle = property.last %}
-                              <div style="display: flex;
-                                align-items: center;
-                                gap: 1rem;" class="product-option">
-                                <dt>{{ property.first }}:</dt>
+                              {% assign Product = all_products[product_handle] %}
+                              {% assign varint = Product.selected_or_first_available_variant %}
+                              {% assign DesirecartItem = '' %}
+
+                              {% for i_tem in cart.items %}
+                                {% if i_tem.variant_id == varint.id %}
+                                  {% assign DesirecartItem = i_tem %}
+                                {% endif %}
+                              {% endfor %}
+
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 1rem;
+                                "
+                                class="product-option"
+                              >
+                                <dt>
+                                  {% if forloop.index <= requredProduct %}
+                                    {{ property.first }}:
+                                  {% else %}
+                                    Optional {{ property.first }}:
+                                    <br>
+                                    <span>-25%</span>
+                                  {% endif %}
+                                </dt>
                                 <dd>
                                   <img
                                     style="width: 50px;"
-                                    src="{{ all_products[product_handle].featured_image | img_url: '150x' }}"
+                                    src="{{ Product.featured_image | img_url: '150x' }}"
                                     alt=""
-                                  >
+
+                                  ><br>
+                                  <small>{{ Product.title | replace: 'Copy of ', '' }}</small>
                                 </dd>
+                                <dd style="text-decoration: line-through;">
+                                  {{ DesirecartItem.original_line_price | money }}
+                                </dd>
+                                <dd>{{ DesirecartItem.final_line_price | money }}</dd>
                               </div>
                             {% else %}
                               <div class="product-option">
@@ -292,7 +378,14 @@
                               id="Quantity-{{ item.index | plus: 1 }}"
                               data-index="{{ item.index | plus: 1 }}"
                             >
-                            <button class="quantity__button no-js-hidden" name="plus" type="button">
+                            <button
+                              class="quantity__button no-js-hidden {% if prevent %} disabled{% endif %}"
+                              name="plus"
+                              type="button"
+                              {% if prevent %}
+                                disabled
+                              {% endif %}
+                            >
                               <span class="visually-hidden">
                                 {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
                               </span>
@@ -303,6 +396,10 @@
                         <cart-remove-button
                           id="Remove-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
+                          optionalVariants="{{bundleVariants}}"
+                          bundleVariantsLine="{{bundleVariantsLine}}"
+                          optionalVariantPrices="{{ optionalUniqIds }}"
+                          prevent="{{ prevent }}"
                         >
                           <a
                             href="{{ item.url_to_remove }}"

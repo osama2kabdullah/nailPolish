@@ -82,8 +82,9 @@
 .design-drawer__content .design-image {
   max-width: 140px;
 }
-.design-drawer__content img{
+.design-drawer__content img {
   width: 100%;
+  height:auto;
 }
 .design-drawer--left .design-drawer__wrapper {
   left: 0;
@@ -100,4 +101,8 @@
 }
 .design-drawer.is-visible .design-drawer__overlay {
   opacity: 0.5;
+}
+.unavaibale-darwer-product {
+  pointer-events: none;
+  opacity: 0.6;
 }
