@@ -138,7 +138,8 @@ var drawer = function () {
         <div class="cross-icond">X</div>
         <img src="${imgSrc}" alt="Alternative Text for the Image" style="width: 100%;">
         <label style="text-align: center; display: block;" for="${indexNumber}">Design ${indexNumber}</label>
-        <input variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
+        <input variant-id="${selectedVariantId}" isOptional="${isOptional}" style="display: none;" type="text" value="${inputBox.name}" name="properties[_Design ${indexNumber}]" id="${indexNumber}" form="${formId}">
+        <input style="display: none;" type="text" value="${inputBox.getAttribute("product-name")}" name="properties[Design ${indexNumber}]" id="${indexNumber+1}" form="${formId}">
       </div>
     `;
 

@@ -26,6 +26,7 @@
               style="display: none;"
               type="checkbox"
               name="{{ product.handle }}"
+              product-name="{{ product.title }}"
               varId="{{ product.selected_or_first_available_variant.id }}"
               quantity="{{ product.selected_or_first_available_variant.inventory_quantity }}"
               availableQuantity="{{ product.selected_or_first_available_variant.inventory_quantity }}"
