@@ -21,7 +21,7 @@
         "template--19649408467270__4b06f847-86aa-4fdf-ac42-a42e69cff129-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Wir sind von unseren Produkten so überzeugt, dass wir dir eine 14 Tage Geld zurück Garantie anbieten, solltest du nicht zufrieden sein! Damit du auf Nummer sicher gehen kannst.<br\/>Kundenzufriedenheit ist uns sehr wichtig und bei Fragen oder beim Wunsch einer Rückgabe kannst du uns gerne hier kontaktieren! <br\/><\/p>"
+            "text": "<p>Wir sind von unseren Produkten so überzeugt, dass wir dir eine 14-tägige Geld-zurück-Garantie bieten, falls du nicht zufrieden sein solltest! So kannst du auf Nummer sicher gehen.<\/p><p> Kundenzufriedenheit liegt uns sehr am Herzen. Bei Fragen oder dem Wunsch einer Rückgabe kannst du uns gerne hier kontaktieren!<\/p>"
           }
         }
       },
@@ -41,7 +41,7 @@
     "c4185662-b8de-4f97-b7e0-165359229aa7": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact form",
+        "heading": "",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,

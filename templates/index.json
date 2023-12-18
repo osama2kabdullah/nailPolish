@@ -6,7 +6,7 @@
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>NAILFUL<\/strong>",
+            "heading": "<strong>NAILFUL - NEU!<\/strong>",
             "heading_size": "h1"
           }
         },
@@ -20,7 +20,7 @@
         "04455753-63b8-4f0e-bfc1-3e1065cab3fc": {
           "type": "caption",
           "settings": {
-            "caption": "Die wohl einfachste und schnellste UV Gel Maniküre. Ergebnisse wie aus dem Nagelstudio!",
+            "caption": "Die einfachste und schnellste UV Gel Maniküre der Welt! Ergebnisse wie aus dem Nagelstudio!",
             "text_style": "subtitle",
             "text_size": "large"
           }
@@ -41,7 +41,7 @@
         "template--19649408500038__5818eb69-f413-4dd3-9034-11e732c3ff8c-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/BANNEER_final_glaenz.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_7278.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -228,7 +228,7 @@
         "subheading": "In nur 2 Minuten erklärt",
         "heading_size": "h2",
         "enable_video_looping": false,
-        "video": "shopify:\/\/files\/videos\/copy_F8625433-3C2C-474E-B70F-166AEE42753E.mov",
+        "video": "shopify:\/\/files\/videos\/final video leise hintergrundsmusik.MOV",
         "video_url": "",
         "description": "",
         "full_width": false,
@@ -293,7 +293,7 @@
         "template--19649408500038__ea67bbec-67d4-4098-9cdc-a37157c487a5-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Kein überteuertes Nagelstudio mehr! <br\/>Mache dir deine Traumnägel ganz einfach selbst, von zu Hause aus! <br\/>Spare dir Geld, Zeit & Stress!<\/p>",
+            "text": "<p>Kein überteuertes Nagelstudio mehr! <br\/>Mache dir deine Traumnägel ganz einfach selbst, von zu Hause aus! <br\/>Spare Geld, Zeit & Stress!<br\/><br\/>Nailful Design im Bild: Babyboomer Nude<\/p>",
             "text_style": "body"
           }
         },
@@ -315,7 +315,7 @@
       "settings": {
         "icon": "shopify:\/\/shop_images\/Nail-shop-with-finger-nail_3c8d1d25-4285-4bb5-a7fe-c8f72260e594.png",
         "heading": "Ergebnisse wie aus dem Nagelstudio",
-        "image": "shopify:\/\/shop_images\/D9760842-4253-463A-9592-67427D11F052.jpg",
+        "image": "shopify:\/\/shop_images\/babyboomernude.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -343,7 +343,7 @@
         "template--19649408500038__cef951b3-0707-4582-9846-ae07c2ec5a9d-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Kein lästiges absplittern mehr! <br\/>Egal ob beim Sport, im Haushalt, bei der Arbeit oder im Alltag, <br\/>die Strips von Nailful sind sehr strapazierfähig und halten deinen Aufgaben stand.<\/p>",
+            "text": "<p>Kein lästiges absplittern mehr! <br\/>Egal ob beim Sport, im Haushalt, bei der Arbeit oder im Alltag, <br\/>die UV Gel Streifen von Nailful sind sehr strapazierfähig und halten deinen Aufgaben stand.<\/p>",
             "text_style": "body"
           }
         }
@@ -354,7 +354,7 @@
       ],
       "settings": {
         "icon": "shopify:\/\/shop_images\/Long-lasting.png",
-        "heading": "3 Wochen langer halt ohne abzusplittern!",
+        "heading": "3 Wochen langer Halt ohne abzusplittern!",
         "image": "shopify:\/\/shop_images\/abwasch.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
@@ -383,7 +383,7 @@
         "template--19649408500038__25188c80-318f-4cc6-94a3-2941afebd828-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>AUFKLEBEN, KÜRZEN, AUSHÄRTEN, FERTIG!<br\/><\/strong>So einfach waren schöne Nägel noch nie! <br\/>So einfach, dass es wirklich jeder ohne Mühe in wenigen Minuten schafft!<\/p>",
+            "text": "<p><strong>AUFKLEBEN, KÜRZEN, AUSHÄRTEN, FERTIG!<br\/><\/strong>So einfach waren perfekte Gelnägel noch nie! <br\/>So einfach, dass es wirklich jeder ohne Mühe in wenigen Minuten schafft!<\/p>",
             "text_style": "body"
           }
         },
@@ -432,7 +432,7 @@
         "template--19649408500038__4f61ab33-a437-487e-9d19-64ae0ffb75d3-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>SCHONEND UND SCHNELL!<\/strong><br\/>Kein abfräsen oder abfeilen mehr!<br\/>Entferne die Nailful UV Streifen ganz einfach in wenigen Minuten mit dem enthaltenen Holzstäbchen und unserem 2in1 Öl Elexir.<\/p>",
+            "text": "<p><strong>SCHONEND UND SCHNELL!<\/strong><br\/><br\/>Kein Abfräsen, Feilen und kein unangenehmer Aceton Geruch mehr!<br\/>Entferne die Nailful UV Streifen ganz einfach in wenigen Minuten mit dem enthaltenen Holzstäbchen und unserem 2in1 Öl Elexir.<\/p>",
             "text_style": "body"
           }
         },
@@ -473,14 +473,14 @@
         "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Aus was bestehen die UV Gel Streifen?",
+            "heading": "Woraus bestehen die UV Gel Streifen?",
             "heading_size": "h1"
           }
         },
         "template--19649408500038__0ad3ca94-8b5a-4572-9415-8728f273e78b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Die Nailful UV Gel Streifen bestehen aus echtem Gel. Und werden erst nach dem aufkleben vollständig in der UV Lampe ausgehärtet.<\/p>",
+            "text": "<p><strong>Flüssiges UV-Gel, das gedruckt wurde, um es einfach aufzukleben!<br\/><\/strong><br\/>Die Nailful UV Gel Streifen bestehen aus echtem Gel und werden erst nach dem aufkleben vollständig in der UV Lampe ausgehärtet.<\/p>",
             "text_style": "body"
           }
         },
@@ -570,6 +570,44 @@
         "padding_bottom": 36
       }
     },
+    "c0d7e566-2b08-4fd2-b412-0f2bd99dab4b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19649408500038__c0d7e566-2b08-4fd2-b412-0f2bd99dab4b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Erhalte ein Geschenk",
+            "heading_size": "h1"
+          }
+        },
+        "template--19649408500038__c0d7e566-2b08-4fd2-b412-0f2bd99dab4b-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sende uns ein Bild von deinen Nägeln mit unseren Nailful UV Gel Streifen zu und erhalte bei deiner nächsten Bestellung ein Geschenk! 🎁<br\/><br\/>Nailful Design im Bild:  Cherry<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19649408500038__c0d7e566-2b08-4fd2-b412-0f2bd99dab4b-heading-1",
+        "template--19649408500038__c0d7e566-2b08-4fd2-b412-0f2bd99dab4b-text-1"
+      ],
+      "settings": {
+        "heading": "",
+        "image": "shopify:\/\/shop_images\/71390EBA-DE4A-4DD3-AF5A-F86B2D555C1C.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "ca88c0d6-1339-48e8-b041-0b92f50d47ad": {
       "type": "multicolumn",
       "blocks": {
@@ -578,7 +616,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/delivery.png",
             "title": "Kostenloser Versand",
-            "text": "<p>Ab einer Bestellung von 45€ bekommst du bereits einen kostenfreien Versand.<\/p>",
+            "text": "<p>Ab 49€ ist der Versand kostenlos<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -640,7 +678,7 @@
     "0d298d38-ebea-401f-ad3c-965a1c64aacc": {
       "type": "featured-collection",
       "settings": {
-        "title": "Zu den Set's mit deinen Lieblingsfarben",
+        "title": "Spare mit den Set's",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -860,6 +898,24 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "0ae44bb5-1db3-481b-9869-e76698aabd3b": {
+      "type": "image-with-text",
+      "settings": {
+        "heading": "",
+        "image": "shopify:\/\/shop_images\/IMG_7898.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
     }
   },
   "order": [
@@ -875,11 +931,13 @@
     "4f61ab33-a437-487e-9d19-64ae0ffb75d3",
     "0ad3ca94-8b5a-4572-9415-8728f273e78b",
     "e6611c65-73f1-4787-9eae-3f90f98d81e4",
+    "c0d7e566-2b08-4fd2-b412-0f2bd99dab4b",
     "ca88c0d6-1339-48e8-b041-0b92f50d47ad",
     "0d298d38-ebea-401f-ad3c-965a1c64aacc",
     "c01f6f21-789a-40c9-a43d-a00ef6749308",
     "aead315c-c7e8-4ce3-9d11-cc776f74d99d",
     "bf2938b7-4038-47fd-b28a-58924aba9ba8",
-    "b086903e-bce2-4bd7-9e90-636c2944a5a7"
+    "b086903e-bce2-4bd7-9e90-636c2944a5a7",
+    "0ae44bb5-1db3-481b-9869-e76698aabd3b"
   ]
 }

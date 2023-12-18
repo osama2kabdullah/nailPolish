@@ -100,7 +100,7 @@
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/profile.php?id=61554183240116",
+    "social_facebook_link": "https:\/\/www.facebook.com\/nailful.de",
     "social_instagram_link": "https:\/\/instagram.com\/nailful.de?igshid=NGVhN2U2NjQ0Yg==",
     "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCkFc5dghVSmTzXOQm6YAsOA",
     "social_tiktok_link": "https:\/\/www.tiktok.com\/@nailful.de?_t=8hxJGfDGxEX&_r=1",
@@ -117,6 +117,12 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/nailfulNEWSIZE.png",
+    "checkout_body_background_color": "#f2efec",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_accent_color": "#1773b0",
+    "checkout_button_color": "#d7c9b6",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",

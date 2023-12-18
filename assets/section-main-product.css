@@ -14,7 +14,9 @@
 .product__media-wrapper {
   padding-left: 0;
 }
-
+span.product__media-icon:has(.icon-plus) {
+    display: none;
+}
 @media screen and (min-width: 750px) {
   .product__column-sticky {
     display: block;
@@ -570,8 +572,8 @@ a.product__text {
 }
 
 .product__media-icon .icon {
-  width: 1.2rem;
-  height: 1.4rem;
+  width: 1.8rem;
+  height: 2.1rem;
 }
 
 .product__media-icon,
@@ -583,13 +585,14 @@ a.product__text {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3rem;
-  width: 3rem;
+  height: 4.5rem;
+  width: 4.5rem;
   position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
+  left: 50%;
+  top: 50%;
   z-index: 1;
   transition: color var(--duration-short) ease, opacity var(--duration-short) ease;
+  transform: translate(-50%,0%);
 }
 
 .product__media-video .product__media-icon {

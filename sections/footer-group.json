@@ -24,12 +24,21 @@
         "f3df1722-b0f3-4c88-a56b-1a185357d608": {
           "type": "payment-icon",
           "settings": {}
+        },
+        "06b0aa38-ddb8-4a84-81d4-2d860fdb0320": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_7271.png",
+            "image_width": 100,
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
         "5d683d2e-bc64-4aec-8cbb-6084f35add16",
         "1334bd66-b0b6-4b2d-b895-11fc3bf300d4",
-        "f3df1722-b0f3-4c88-a56b-1a185357d608"
+        "f3df1722-b0f3-4c88-a56b-1a185357d608",
+        "06b0aa38-ddb8-4a84-81d4-2d860fdb0320"
       ],
       "settings": {
         "color_scheme": "background-1",
