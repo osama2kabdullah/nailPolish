@@ -322,7 +322,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .product-option dd {
-  word-break: break-word;
+  
 }
 
 .cart-drawer details[open] > summary .icon-caret {

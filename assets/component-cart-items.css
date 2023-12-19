@@ -203,6 +203,7 @@ cart-remove-button .icon-remove {
 .product-option * {
   display: inline;
   margin: 0;
+  word-break: keep-all;
 }
 
 .cart-items thead th {
