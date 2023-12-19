@@ -165,13 +165,31 @@
     and section.settings.gallery_layout contains 'thumbnail'
     or section.settings.mobile_thumbnails == 'show'
   -%}
+    <style>
+      @media only screen and (max-width: 749px) {
+        .hide-descktop-size {
+          display: none !important;
+        }
+        .thumbnail-list__item.slider__slide {
+          width: 5%;
+          border: 1px solid;
+          border-radius: 10px;
+        }
+        .thumbnail-list__item.slider__slide button {
+          border-radius: 10px;
+        }
+        .justify-content-space-center{
+          justify-content: center;
+        }
+      }
+    </style>
     <slider-component
       id="GalleryThumbnails-{{ section.id }}{{ id_append }}"
       class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
     >
       <button
         type="button"
-        class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
+        class="slider-button hide-descktop-size slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
         name="previous"
         aria-label="{{ 'general.slider.previous_slide' | t }}"
         aria-controls="GalleryThumbnails-{{ section.id }}"
@@ -181,7 +199,7 @@
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
-        class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
+        class="thumbnail-list justify-content-space-center list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
       >
         {%- capture sizes -%}
           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
@@ -227,6 +245,7 @@
                   sizes: sizes,
                   widths: '54, 74, 104, 162, 208, 324, 416',
                   id: thumbnail_id,
+                  class: 'hide-descktop-size',
                   alt: featured_media.alt
                 | escape
               }}
@@ -254,11 +273,11 @@
               data-media-position="{{ media_index }}"
             >
               {%- if media.media_type == 'model' -%}
-                <span class="thumbnail__badge" aria-hidden="true">
+                <span class="thumbnail__badge hide-descktop-size" aria-hidden="true">
                   {%- render 'icon-3d-model' -%}
                 </span>
               {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
-                <span class="thumbnail__badge" aria-hidden="true">
+                <span class="thumbnail__badge hide-descktop-size" aria-hidden="true">
                   {%- render 'icon-play' -%}
                 </span>
               {%- endif -%}
@@ -285,6 +304,7 @@
                     sizes: sizes,
                     widths: '54, 74, 104, 162, 208, 324, 416',
                     id: thumbnail_id,
+                    class: 'hide-descktop-size',
                     alt: media.alt
                   | escape
                 }}
@@ -295,7 +315,7 @@
       </ul>
       <button
         type="button"
-        class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
+        class="slider-button hide-descktop-size slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
         name="next"
         aria-label="{{ 'general.slider.next_slide' | t }}"
         aria-controls="GalleryThumbnails-{{ section.id }}"
