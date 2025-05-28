@@ -50,7 +50,7 @@
   }
 {% endstyle %}
 {%liquid
-  assign requredNnumber = product.metafields.custom.requred_to_add.value
+  assign requredNnumber = product.metafields.custom.requred_to_add.value | default: 1
 %}
 
 <h2>Wähle deine Designs:</h2>
