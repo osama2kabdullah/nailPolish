@@ -50,32 +50,33 @@
   }
 {% endstyle %}
 {%liquid
-  assign requredNnumber = product.metafields.custom.requred_to_add.value | default: 1
+  assign requredNnumber = product.metafields.custom.required_to_add.value | default: 0
 %}
 
-<h2>Wähle deine Designs:</h2>
-
-
-<section class="select-wrapper">
-  {% for i in (1..requredNnumber) %}
-    <a
-      style="text-decoration: none;"
-      href="javascript:void(0)"
-      data-drawer-trigger
-      aria-controls="drawer-name"
-      aria-expanded="false"
-      form-id="{{ product_form_id }}"
-      index-number="{{ forloop.index }}"
-      requred-number="{{ requredNnumber }}"
-      optional="false"
-    >
-      <div class="select-input">
-        <p class="select-icon">+</p>
-      </div>
-      <p class="design-name">Design {{ forloop.index }}</p>
-    </a>
-  {% endfor %}
-</section>
+<div data-requred-number="{{ requredNnumber }}"></div>
+{% if requredNnumber > 0 %}
+  <h2>Wähle deine Designs:</h2>
+  <section class="select-wrapper">
+    {% for i in (1..requredNnumber) %}
+      <a
+        style="text-decoration: none;"
+        href="javascript:void(0)"
+        data-drawer-trigger
+        aria-controls="drawer-name"
+        aria-expanded="false"
+        form-id="{{ product_form_id }}"
+        index-number="{{ forloop.index }}"
+        requred-number="{{ requredNnumber }}"
+        optional="false"
+      >
+        <div class="select-input">
+          <p class="select-icon">+</p>
+        </div>
+        <p class="design-name">Design {{ forloop.index }}</p>
+      </a>
+    {% endfor %}
+  </section>
+{% endif %}
 
 <br>
 <h2>Optional</h2>

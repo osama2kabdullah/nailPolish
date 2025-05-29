@@ -283,3 +283,16 @@ var drawer = function () {
 };
 
 drawer();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const element = document.querySelector('[data-requred-number]');
+  if (element) {
+    const value = element.getAttribute('data-requred-number');
+    if (value > 0) {
+      const addBtn = document.querySelector(".product-form__submit");
+      if (addBtn) {
+        addBtn.disabled = true; // Disable the button initially
+      }
+    }
+  }
+});

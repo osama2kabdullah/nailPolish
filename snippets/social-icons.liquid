@@ -26,6 +26,27 @@
       </a>
     </li>
   {%- endif -%}
+  {%- if settings.social_upwork_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_upwork_link }}" class="link list-social__link">
+        {%- render 'icon-upwork' -%}
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_linkedin_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_linkedin_link }}" class="link list-social__link">
+        {%- render 'icon-linkedin' -%}
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_github_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_github_link }}" class="link list-social__link">
+        {%- render 'icon-github' -%}
+      </a>
+    </li>
+  {%- endif -%}
   {%- if settings.social_youtube_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_youtube_link }}" class="link list-social__link">
